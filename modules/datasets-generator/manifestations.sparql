@@ -1,0 +1,19 @@
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix melod: <https://lod.academy/melod/vocab/ontology#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix schema: <https://schema.org/>
+prefix terms: <https://lod.academy/melod/vocab/terms#>
+
+construct {
+  ?manifestation_iri a melod:ManifestationEntity ;
+  	skos:prefLabel ?label .
+} where {
+  select ?manifestation_iri ?label where {
+    ?manifestation_iri a melod:Manifestation .
+    ?manifestation_iri melod:hasTitle ?title_subj .
+    ?title_subj rdfs:label ?manifestation_title .
+    bind(?manifestation_title AS ?label)
+  }
+  order by ?label
+}

@@ -1,0 +1,22 @@
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix melod: <https://lod.academy/melod/vocab/ontology#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix schema: <https://schema.org/>
+prefix terms: <https://lod.academy/melod/vocab/terms#>
+
+construct {
+  ?expression_iri a melod:ExpressionEntity ;
+  	skos:prefLabel ?label .
+} where {
+  select ?expression_iri ?label where {
+    ?expression_iri a melod:Expression .
+    ?expression_iri rdfs:label ?expression_title .
+    OPTIONAL {
+      ?expression_iri melod:hasIncipit ?incipit_iri .
+      ?incipit_iri melod:hasIncipitText ?incipit_text .
+    }
+    bind(coalesce(concat(?expression_title, " ('", ?incipit_text, "')"), ?expression_title) AS ?label)
+  }
+  order by ?label
+}

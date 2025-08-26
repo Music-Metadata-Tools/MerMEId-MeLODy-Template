@@ -1,0 +1,26 @@
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix melod: <https://lod.academy/melod/vocab/ontology#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix schema: <https://schema.org/>
+
+construct {
+  ?performanceEvent_iri a melod:PerformanceEvent ;
+  	skos:prefLabel ?label .
+} where {
+  select ?performanceEvent_iri ?label where {
+    ?performanceEvent_iri a melod:PerformanceEvent .
+
+    ?performanceEvent_iri rdfs:label ?performanceEvent_name .
+    OPTIONAL {
+      ?performanceEvent_iri melod:hasEventDate ?performanceEvent_date_iri .
+      ?performanceEvent_date_iri schema:description ?performanceEvent_date .
+    }
+    OPTIONAL {
+      ?performanceEvent_iri melod:hasVenue | schema:location ?performanceEvent_place .
+      ?performanceEvent_place schema:name ?place_name .
+    }
+    bind(coalesce(concat(?performanceEvent_name, ": ", ?performanceEvent_date, " ", ?place_name), ?performanceEvent_name) AS ?label)
+    }
+  order by ?label
+}

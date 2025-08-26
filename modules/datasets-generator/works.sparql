@@ -1,0 +1,20 @@
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix melod: <https://lod.academy/melod/vocab/ontology#>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix schema: <https://schema.org/>
+prefix terms: <https://lod.academy/melod/vocab/terms#>
+
+construct {
+  ?work_iri a melod:WorkEntity ;
+  	skos:prefLabel ?label .
+} where {
+  select ?work_iri ?label where {
+    ?work_iri a melod:Work .
+    ?work_iri melod:hasTitle ?title_subj .
+    ?title_subj melod:hasTitleType terms:MainTitle .
+    ?title_subj rdfs:label ?work_title .
+    bind(?work_title AS ?label)
+  }
+  order by ?label
+}
