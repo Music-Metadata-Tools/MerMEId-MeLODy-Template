@@ -17,7 +17,7 @@
 @prefix gndo: <https://d-nb.info/standards/elementset/gnd#>.
 
 <urn:uuid:4019778394> rdfs:label "Aufführung";
-    sdo:location <urn:uuid:2096486337>;
+    melod:hasVenue <urn:uuid:2096486337>;
     sdo:description "Liturgischer Ort: nach der Predigt";
     a melod:PerformanceEvent;
     melod:hasEventDate _:3fc761fc-073f-4a24-a13d-84823f56fb46.

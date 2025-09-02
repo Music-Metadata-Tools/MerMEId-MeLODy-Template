@@ -17,7 +17,7 @@
 @prefix gndo: <https://d-nb.info/standards/elementset/gnd#>.
 
 <urn:uuid:603545879> rdfs:label "Aufführung";
-    sdo:location <urn:uuid:2096486337>;
+    melod:hasVenue <urn:uuid:2096486337>;
     sdo:description "Nach Datum auf dem Umschlag des Stimmenmaterials (D-B Mus.ms. 21740/250).";
     a melod:PerformanceEvent;
     melod:hasEventDate _:523d5c91-02f6-413d-a6fe-9175bcc8b4fd.
