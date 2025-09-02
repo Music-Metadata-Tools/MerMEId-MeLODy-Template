@@ -10,7 +10,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
-@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/mermeid-sample-data/datasets/>.
+@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix sdo: <https://schema.org/>.
 @prefix mus: <http://data.doremus.org/ontology#>.
@@ -28,5 +28,4 @@ _:811b0f7e-3b3a-40b2-8886-d2875fa75cb5 a melod:TitlePage;
     melod:paragraph "<rend fontstyle=\"italic\">Da, | bey aufgehender Friedens=Sonne, | als nemlich | zwischen | Sr. Kön. Maj. in Preußen, | unserm allergnädigsten Herrn | und | Sr. Rußisch Kaiserl. Maj. | ein erwünschter Friede | getroffen worden, | ein | dem höchsten GOtt darzubringendes Dankfest | am 1 heil. Pfingst=Tage, | den 30 Mai 1762. | angeordet worden, | so wurde, | zu mehrerer Aufmunterung, unter nachfolgendem Text, | in der hiesigen S.Nicolai Kirche eine Musik | aufgeführet | von | J. Ditmar, | Cant. und Direct. Mus. zu S. Nicolai.</rend> | Berlin, gedruckt bey Samuel König, privil. Buchdrucker.".
 _:4ac5fdb1-44e1-473c-8f03-14252de3c7a3 a sdo:PublicationEvent;
     sdo:startDate "1762-01-01"^^xsd:date;
-    sdo:publishedBy <urn:uuid:193341448>;
-    sdo:location <urn:uuid:2010647358>.
+    sdo:publishedBy <urn:uuid:persons/3073066331>.
