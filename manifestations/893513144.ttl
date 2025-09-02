@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix melod: <https://lod.academy/melod/vocab/ontology#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix schema: <https://schema.org/>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dash: <http://datashapes.org/dash#>.
+@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix efrbroo: <https://erlangen-crm.org/efrbroo/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix terms: <https://lod.academy/melod/vocab/terms#>.
+@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/mermeid-sample-data/datasets/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix sdo: <https://schema.org/>.
+@prefix mus: <http://data.doremus.org/ontology#>.
+@prefix gndo: <https://d-nb.info/standards/elementset/gnd#>.
+
+_:239c2e71-de0c-4fc2-98fb-944b5543b9cd rdfs:label "Da, bei aufgehender Friedenssonne (Berlin 1762)";
+    a melod:Title.
+<urn:uuid:893513144> a melod:Manifestation;
+    melod:hasTitle _:239c2e71-de0c-4fc2-98fb-944b5543b9cd;
+    melod:hasClassificationOfManifestation "Textquelle";
+    melod:hasTitlePage _:811b0f7e-3b3a-40b2-8886-d2875fa75cb5;
+    sdo:publication _:4ac5fdb1-44e1-473c-8f03-14252de3c7a3;
+    <http://www.cidoc-crm.org/efrbroo/R4_embodies> <urn:uuid:2293419636>.
+_:811b0f7e-3b3a-40b2-8886-d2875fa75cb5 a melod:TitlePage;
+    melod:paragraph "<rend fontstyle=\"italic\">Da, | bey aufgehender Friedens=Sonne, | als nemlich | zwischen | Sr. Kön. Maj. in Preußen, | unserm allergnädigsten Herrn | und | Sr. Rußisch Kaiserl. Maj. | ein erwünschter Friede | getroffen worden, | ein | dem höchsten GOtt darzubringendes Dankfest | am 1 heil. Pfingst=Tage, | den 30 Mai 1762. | angeordet worden, | so wurde, | zu mehrerer Aufmunterung, unter nachfolgendem Text, | in der hiesigen S.Nicolai Kirche eine Musik | aufgeführet | von | J. Ditmar, | Cant. und Direct. Mus. zu S. Nicolai.</rend> | Berlin, gedruckt bey Samuel König, privil. Buchdrucker.".
+_:4ac5fdb1-44e1-473c-8f03-14252de3c7a3 a sdo:PublicationEvent;
+    sdo:startDate "1762-01-01"^^xsd:date;
+    sdo:publishedBy <urn:uuid:193341448>;
+    sdo:location <urn:uuid:2010647358>.
