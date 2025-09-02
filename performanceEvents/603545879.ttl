@@ -9,7 +9,7 @@
 @prefix mus: <http://data.doremus.org/ontology#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
-@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/mermeid-sample-data/datasets/>.
+@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix sdo: <https://schema.org/>.
@@ -20,8 +20,8 @@
     sdo:location <urn:uuid:2096486337>;
     sdo:description "Nach Datum auf dem Umschlag des Stimmenmaterials (D-B Mus.ms. 21740/250).";
     a melod:PerformanceEvent;
-    melod:hasEventDate _:2da023e0-5ea3-4d91-9951-d33511fbdba7.
-_:2da023e0-5ea3-4d91-9951-d33511fbdba7 melod:isodate "1763-01-01"^^xsd:date;
+    melod:hasEventDate _:523d5c91-02f6-413d-a6fe-9175bcc8b4fd.
+_:523d5c91-02f6-413d-a6fe-9175bcc8b4fd melod:isodate "1763-01-01"^^xsd:date;
     sdo:description "1. Januar 1763 (Neujahr)";
     melod:hasCertainty terms:HighCertainty;
-    a melod:Date.
+    a melod:ExactDate.
