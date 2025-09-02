@@ -19,31 +19,34 @@
 <urn:uuid:2293419636> rdfs:label "Halleluja, lobet den Namen des Herrn";
     melod:inLanguage terms:German;
     melod:completionStatus terms:CompleteExpression;
-    melod:hasClassification "Geistliche Vokalmusik (liturgisch)", "Kirchenmusik [geisliche Kantate]";
     a melod:Expression;
+    melod:hasAnnotation _:a849c0fe-1fff-4747-ab7f-aa5467425145;
+    melod:hasClassification "Geistliche Vokalmusik (liturgisch)", "Kirchenmusik [geisliche Kantate]";
     melod:hasContribution _:8871c9ba-10d9-4fe1-b800-b1598d6b1c8e, _:b8ff490f-d163-4ecc-8719-a685c9773428;
     sdo:dateCreated _:874acd58-c7c8-4678-83a1-6e2d27009fa4;
     melod:hasHistoricEvent _:1f090392-92b1-41a1-bf93-43ca2108e6ba;
     sdo:firstPerformance <urn:uuid:1412123009>;
     melod:hasPerformance <urn:uuid:3395291370>, <urn:uuid:4019778394>, <urn:uuid:603545879>;
-    sdo:includedComposition <urn:uuid:1921829629>, <urn:uuid:1100659433>, <urn:uuid:1298183696>, <urn:uuid:2824638156>, <urn:uuid:926630544>, <urn:uuid:2277979240>.
-_:8871c9ba-10d9-4fe1-b800-b1598d6b1c8e melod:hasAgent <urn:uuid:2736609098>;
+    sdo:includedComposition <urn:uuid:1921829629>, <urn:uuid:1100659433>, <urn:uuid:1298183696>, <urn:uuid:2824638156>, <urn:uuid:926630544>, <urn:uuid:2277979240>;
+    sdo:isPartOf <urn:uuid:2372423187>.
+_:a849c0fe-1fff-4747-ab7f-aa5467425145 rdfs:label "Liturgische Bestimmung";
+    melod:paragraph "Neujahr (1.1.)";
+    a melod:Annotation.
+_:8871c9ba-10d9-4fe1-b800-b1598d6b1c8e a melod:Contribution;
+    melod:hasAgent <urn:uuid:2736609098>;
     melod:hasRole terms:Composer;
-    melod:hasCertainty terms:HighCertainty;
-    a melod:Contribution.
-_:b8ff490f-d163-4ecc-8719-a685c9773428 melod:hasAgent <urn:uuid:4202043203>;
+    melod:hasCertainty terms:HighCertainty.
+_:b8ff490f-d163-4ecc-8719-a685c9773428 a melod:Contribution;
+    melod:hasAgent <urn:uuid:4202043203>;
     melod:hasRole terms:Lyricist;
-    melod:hasCertainty terms:HighCertainty;
-    a melod:Contribution.
-_:874acd58-c7c8-4678-83a1-6e2d27009fa4 melod:hasCertainty terms:LowCertainty;
-    a melod:ExactDate;
+    melod:hasCertainty terms:HighCertainty.
+_:874acd58-c7c8-4678-83a1-6e2d27009fa4 a melod:ExactDate;
+    melod:hasCertainty terms:LowCertainty;
     melod:isodate "1741-01-01"^^xsd:date;
     sdo:description "[1741]".
 _:1f090392-92b1-41a1-bf93-43ca2108e6ba rdfs:label "Druck";
     a melod:Event;
     melod:hasEventDate _:309f8909-3655-4f80-8d10-3f06675029d7.
-_:309f8909-3655-4f80-8d10-3f06675029d7 melod:hasCertainty melod:MediumCertainty;
-    a melod:Date;
-    sdo:description "1742-1744";
-    melod:notBefore "1742";
-    melod:notAfter "1744".
+_:309f8909-3655-4f80-8d10-3f06675029d7 a melod:Date;
+    melod:hasCertainty melod:MediumCertainty;
+    sdo:description "1742-1744".
