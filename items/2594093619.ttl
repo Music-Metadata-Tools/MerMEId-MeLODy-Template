@@ -3,22 +3,17 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix schema: <https://schema.org/>.
 @prefix sh: <http://www.w3.org/ns/shacl#>.
-@prefix dash: <http://datashapes.org/dash#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix efrbroo: <https://erlangen-crm.org/efrbroo/>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
-@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/mermeid-sample-data/datasets/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix sdo: <https://schema.org/>.
+@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
 @prefix mus: <http://data.doremus.org/ontology#>.
-@prefix gndo: <https://d-nb.info/standards/elementset/gnd#>.
 
 <urn:uuid:2594093619> rdfs:label "D-Bsa SA 601";
     owl:sameAs <https://resolver.staatsbibliothek-berlin.de/SBB000347F900000000>;
     cidoc:P50_has_current_keeper <urn:uuid:901685163>;
     melod:hasShelfmark "SA 601";
-    <http://www.cidoc-crm.org/efrbroo/R7_is_materialization_of> <urn:uuid:893513144>;
+    efrbroo:R7_is_materialization_of <urn:uuid:893513144>;
     a melod:Item.

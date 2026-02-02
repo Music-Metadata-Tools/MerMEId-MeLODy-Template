@@ -4,24 +4,19 @@
 @prefix schema: <https://schema.org/>.
 @prefix sh: <http://www.w3.org/ns/shacl#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix dash: <http://datashapes.org/dash#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix mus: <http://data.doremus.org/ontology#>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
-@prefix dct: <http://purl.org/dc/terms/>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
-@prefix sdo: <https://schema.org/>.
-@prefix efrbroo: <https://erlangen-crm.org/efrbroo/>.
-@prefix gndo: <https://d-nb.info/standards/elementset/gnd#>.
+@prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
 
 <urn:uuid:603545879> rdfs:label "Aufführung";
     melod:hasVenue <urn:uuid:2096486337>;
-    sdo:description "Nach Datum auf dem Umschlag des Stimmenmaterials (D-B Mus.ms. 21740/250).";
+    schema:description "Nach Datum auf dem Umschlag des Stimmenmaterials (D-B Mus.ms. 21740/250).";
     a melod:PerformanceEvent;
     melod:hasEventDate _:523d5c91-02f6-413d-a6fe-9175bcc8b4fd.
 _:523d5c91-02f6-413d-a6fe-9175bcc8b4fd melod:isodate "1763-01-01"^^xsd:date;
-    sdo:description "1. Januar 1763 (Neujahr)";
+    schema:description "1. Januar 1763 (Neujahr)";
     melod:hasCertainty terms:HighCertainty;
     a melod:ExactDate.

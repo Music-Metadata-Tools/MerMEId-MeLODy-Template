@@ -4,17 +4,12 @@
 @prefix schema: <https://schema.org/>.
 @prefix sh: <http://www.w3.org/ns/shacl#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix dash: <http://datashapes.org/dash#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix mus: <http://data.doremus.org/ontology#>.
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
 @prefix melodTerms: <https://lod.academy/melod/vocab/terms#>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
-@prefix sdo: <https://schema.org/>.
-@prefix efrbroo: <https://erlangen-crm.org/efrbroo/>.
-@prefix gndo: <https://d-nb.info/standards/elementset/gnd#>.
+@prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
 
 <urn:uuid:204336523> rdfs:label "2., V., B.c.";
     a melod:Instrumentation;

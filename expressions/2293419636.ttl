@@ -3,18 +3,13 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix schema: <https://schema.org/>.
 @prefix sh: <http://www.w3.org/ns/shacl#>.
-@prefix dash: <http://datashapes.org/dash#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix mus: <http://data.doremus.org/ontology#>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix sdo: <https://schema.org/>.
-@prefix efrbroo: <https://erlangen-crm.org/efrbroo/>.
-@prefix gndo: <https://d-nb.info/standards/elementset/gnd#>.
+@prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
 
 <urn:uuid:2293419636> rdfs:label "Halleluja, lobet den Namen des Herrn";
     melod:inLanguage terms:German;
@@ -23,12 +18,12 @@
     melod:hasAnnotation _:a849c0fe-1fff-4747-ab7f-aa5467425145;
     melod:hasClassification "Geistliche Vokalmusik (liturgisch)", "Kirchenmusik [geisliche Kantate]";
     melod:hasContribution _:8871c9ba-10d9-4fe1-b800-b1598d6b1c8e, _:b8ff490f-d163-4ecc-8719-a685c9773428;
-    sdo:dateCreated _:874acd58-c7c8-4678-83a1-6e2d27009fa4;
+    schema:dateCreated _:874acd58-c7c8-4678-83a1-6e2d27009fa4;
     melod:hasHistoricEvent _:1f090392-92b1-41a1-bf93-43ca2108e6ba;
-    sdo:firstPerformance <urn:uuid:1412123009>;
+    schema:firstPerformance <urn:uuid:1412123009>;
     melod:hasPerformance <urn:uuid:3395291370>, <urn:uuid:4019778394>, <urn:uuid:603545879>;
-    sdo:includedComposition <urn:uuid:1921829629>, <urn:uuid:1100659433>, <urn:uuid:1298183696>, <urn:uuid:2824638156>, <urn:uuid:926630544>, <urn:uuid:2277979240>;
-    sdo:isPartOf <urn:uuid:2372423187>.
+    schema:includedComposition <urn:uuid:1921829629>, <urn:uuid:1100659433>, <urn:uuid:1298183696>, <urn:uuid:2824638156>, <urn:uuid:926630544>, <urn:uuid:2277979240>;
+    schema:isPartOf <urn:uuid:2372423187>.
 _:a849c0fe-1fff-4747-ab7f-aa5467425145 rdfs:label "Liturgische Bestimmung";
     melod:paragraph "Neujahr (1.1.)";
     a melod:Annotation.
@@ -43,10 +38,10 @@ _:b8ff490f-d163-4ecc-8719-a685c9773428 a melod:Contribution;
 _:874acd58-c7c8-4678-83a1-6e2d27009fa4 a melod:ExactDate;
     melod:hasCertainty terms:LowCertainty;
     melod:isodate "1741-01-01"^^xsd:date;
-    sdo:description "[1741]".
+    schema:description "[1741]".
 _:1f090392-92b1-41a1-bf93-43ca2108e6ba rdfs:label "Druck";
     a melod:Event;
     melod:hasEventDate _:309f8909-3655-4f80-8d10-3f06675029d7.
 _:309f8909-3655-4f80-8d10-3f06675029d7 a melod:Date;
     melod:hasCertainty melod:MediumCertainty;
-    sdo:description "1742-1744".
+    schema:description "1742-1744".

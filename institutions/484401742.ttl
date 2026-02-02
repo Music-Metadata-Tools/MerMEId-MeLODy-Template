@@ -4,20 +4,15 @@
 @prefix schema: <https://schema.org/>.
 @prefix sh: <http://www.w3.org/ns/shacl#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix dash: <http://datashapes.org/dash#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
-@prefix sdo: <https://schema.org/>.
 @prefix mus: <http://data.doremus.org/ontology#>.
-@prefix efrbroo: <https://erlangen-crm.org/efrbroo/>.
-@prefix gndo: <https://d-nb.info/standards/elementset/gnd#>.
+@prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
 
-<urn:uuid:484401742> sdo:name "Staatsbibliothek zu Berlin - Preußischer Kulturbesitz";
+<urn:uuid:484401742> schema:name "Staatsbibliothek zu Berlin - Preußischer Kulturbesitz";
     melod:hasAbbreviation "D-B";
     owl:sameAs <https://rism.online/institutions/30000655>;
-    sdo:location <urn:uuid:places/2884711907>;
+    schema:location <urn:uuid:places/2884711907>;
     a melod:Institution.

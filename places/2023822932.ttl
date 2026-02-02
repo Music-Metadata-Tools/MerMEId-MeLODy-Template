@@ -4,7 +4,6 @@
 @prefix schema: <https://schema.org/>.
 @prefix sh: <http://www.w3.org/ns/shacl#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix dash: <http://datashapes.org/dash#>.
 
 <urn:uuid:2023822932> schema:name "Frankfurt a. M.";
     owl:sameAs <https://www.geonames.org/2925533>;

@@ -3,26 +3,21 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix schema: <https://schema.org/>.
 @prefix sh: <http://www.w3.org/ns/shacl#>.
-@prefix dash: <http://datashapes.org/dash#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix mus: <http://data.doremus.org/ontology#>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
-@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/mermeid-sample-data/datasets/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix sdo: <https://schema.org/>.
-@prefix efrbroo: <https://erlangen-crm.org/efrbroo/>.
-@prefix gndo: <https://d-nb.info/standards/elementset/gnd#>.
+@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
+@prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
 
 <urn:uuid:2372423187> rdfs:label "Musicalisches Lob Gottes";
     melod:inLanguage terms:German;
     melod:hasClassification "Geistliche Vokalmusik (liturgisch)", "Kirchenmusikalischer Jahrgang [Kantaten-Jahrgang]";
     a melod:Expression;
     melod:hasContribution _:a2bf5fd8-a15b-425e-9b10-465c6f9b8331, _:87486e71-1872-4547-8651-507769b48903;
-    sdo:dateCreated _:ef70fd41-35eb-4f18-986a-1e0c4e992c7c;
-    sdo:locationCreated <urn:uuid:2096486337>;
+    schema:dateCreated _:ef70fd41-35eb-4f18-986a-1e0c4e992c7c;
+    schema:locationCreated <urn:uuid:2096486337>;
     melod:hasInstrumentation <urn:uuid:1134679629>;
     melod:hasPart <urn:uuid:2293419636>.
 _:a2bf5fd8-a15b-425e-9b10-465c6f9b8331 melod:hasAgent <urn:uuid:2736609098>;
@@ -35,4 +30,4 @@ _:87486e71-1872-4547-8651-507769b48903 melod:hasAgent <urn:uuid:4202043203>;
     a melod:Contribution.
 _:ef70fd41-35eb-4f18-986a-1e0c4e992c7c melod:hasCertainty melod:MediumCertainty;
     a melod:Date;
-    sdo:description "[1741]-1744".
+    schema:description "[1741]-1744".
