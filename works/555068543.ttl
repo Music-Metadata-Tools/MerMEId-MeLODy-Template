@@ -5,7 +5,6 @@
 @prefix sh: <http://www.w3.org/ns/shacl#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
-@prefix gnd: <https://d-nb.info/standards/elementset/gnd#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
 @prefix mus: <http://data.doremus.org/ontology#>.
