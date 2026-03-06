@@ -5,7 +5,7 @@
 @prefix sh: <http://www.w3.org/ns/shacl#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
-@prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
@@ -17,4 +17,4 @@ _:b935e5ef-2664-4cdd-9aaf-07b1e698887b rdfs:label "Musicalisches Lob Gottes (Nü
     melod:hasTitle _:b935e5ef-2664-4cdd-9aaf-07b1e698887b;
     schema:description "Zu Fundorten des vollständigen Druckwerks siehe den Haupteintrag <rend fontstyle=\"italic\">Musicalisches Lob Gottes</rend> (Zugehörigkeit:MusLG).";
     melod:hasClassificationOfManifestation "Musikalische Quelle", "Hauptquelle";
-    <http://www.cidoc-crm.org/efrbroo/R4_embodies> <urn:uuid:2293419636>.
+    lrmoo:R4_embodies <urn:uuid:2293419636>.

@@ -9,7 +9,7 @@
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
-@prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 
 <urn:uuid:3395291370> rdfs:label "Aufführung";
     melod:hasVenue <urn:uuid:2096486337>;

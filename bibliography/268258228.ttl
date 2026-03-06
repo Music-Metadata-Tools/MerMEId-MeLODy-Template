@@ -9,7 +9,7 @@
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix mus: <http://data.doremus.org/ontology#>.
-@prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 
 <urn:uuid:268258228> schema:genre terms:ArticleJournal;
     a melod:Bibliography;

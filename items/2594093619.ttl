@@ -6,7 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
 @prefix mus: <http://data.doremus.org/ontology#>.
@@ -15,5 +15,5 @@
     owl:sameAs <https://resolver.staatsbibliothek-berlin.de/SBB000347F900000000>;
     cidoc:P50_has_current_keeper <urn:uuid:901685163>;
     melod:hasShelfmark "SA 601";
-    efrbroo:R7_is_materialization_of <urn:uuid:893513144>;
+    lrmoo:R7_exemplifies <urn:uuid:893513144>;
     a melod:Item.

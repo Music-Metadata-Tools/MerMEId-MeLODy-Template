@@ -6,7 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
 @prefix mus: <http://data.doremus.org/ontology#>.
@@ -19,7 +19,7 @@
     melod:hasAcquisition _:e9696b09-5537-42e3-9497-75c0fa57b0fa;
     melod:hasProvenance _:bc7eab1f-246d-4028-a062-847d76dca90f, _:0489f722-b20f-485e-adf2-bc6155756602;
     melod:hasTitlePage _:dace1c49-3f15-4c0b-83dc-bcda16ef416d;
-    efrbroo:R7_is_materialization_of <urn:uuid:3043558560>.
+    lrmoo:R7_exemplifies <urn:uuid:3043558560>.
 _:e9696b09-5537-42e3-9497-75c0fa57b0fa melod:isodate "1841-01-01"^^xsd:date;
     schema:description "1841";
     a melod:ExactDate.

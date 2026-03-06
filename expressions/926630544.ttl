@@ -9,7 +9,7 @@
 @prefix mus: <http://data.doremus.org/ontology#>.
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
-@prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 
 <urn:uuid:926630544> rdfs:label "Choral";
     melod:inLanguage terms:German;
@@ -25,6 +25,6 @@ _:7a627758-f334-4559-bb41-4a2986ec19c7 melod:hasPitch terms:C;
     a melod:Key.
 _:728a2446-f148-432d-8612-8f230257bd2e a melod:Meter;
     melod:usesMeterSymbol "common".
-_:257b0c4b-5189-4cc5-980c-f1656d77cdc4 a schema:MusicIncipit;
+_:257b0c4b-5189-4cc5-980c-f1656d77cdc4 a melod:MusicIncipit;
     melod:hasIncipitValue "@clef:G-2@keysig:bBEA@timesig:c@data:2-'G/''CD/EF/2.D4C/'1B/";
     melod:hasIncipitText "All solch dein Güt wir preisen".

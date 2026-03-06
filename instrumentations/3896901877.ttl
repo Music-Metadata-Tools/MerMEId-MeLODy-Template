@@ -9,7 +9,7 @@
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
 @prefix melodTerms: <https://lod.academy/melod/vocab/terms#>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
-@prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 
 <urn:uuid:3896901877> rdfs:label "2., B.c., V., Pk., Trp.";
     a melod:Instrumentation;

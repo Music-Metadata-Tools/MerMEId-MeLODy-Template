@@ -9,7 +9,7 @@
 @prefix mus: <http://data.doremus.org/ontology#>.
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
-@prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 
 <urn:uuid:1921829629> rdfs:label "Chor [Dictum]";
     melod:completionStatus terms:CompleteExpression;
@@ -25,6 +25,6 @@ _:0243a56c-6d2c-4eb4-8ea7-4c15e27ee85b melod:hasPitch terms:E;
     a melod:Key.
 _:28a1e195-e1cb-4992-81b7-96700531b2f4 a melod:Meter;
     melod:usesMeterSymbol "common".
-_:2081bb5c-a9c8-4e7a-985f-b31c568d8791 a schema:MusicIncipit;
+_:2081bb5c-a9c8-4e7a-985f-b31c568d8791 a melod:MusicIncipit;
     melod:hasIncipitValue "@clef:G-2@keysig:bBEA@timesig:c@data:4-''EED/EEED/2E'4B''8CD/4EDC{8DE}/4FED";
     melod:hasIncipitText "Halleluja, lobet den Namen des Herrn".

@@ -9,7 +9,7 @@
 @prefix mus: <http://data.doremus.org/ontology#>.
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
-@prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 
 <urn:uuid:4054568812> rdfs:label "Helft mir Gottes Güte preisen (Choral)";
     a melod:Expression.

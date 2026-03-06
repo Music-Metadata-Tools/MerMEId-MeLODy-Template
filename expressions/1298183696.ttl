@@ -9,7 +9,7 @@
 @prefix mus: <http://data.doremus.org/ontology#>.
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
-@prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 
 <urn:uuid:1298183696> rdfs:label "Recit[ativ]";
     melod:inLanguage terms:German;
@@ -23,6 +23,6 @@ _:a2ec8a44-2a98-4583-ac63-ae461c6fc369 schema:description "modulierend";
     a melod:Key.
 _:89f544a2-058b-45a7-a21a-df462e584942 a melod:Meter;
     melod:usesMeterSymbol "common".
-_:a811b030-242b-4b88-9ab3-02d3906e03c7 a schema:MusicIncipit;
+_:a811b030-242b-4b88-9ab3-02d3906e03c7 a melod:MusicIncipit;
     melod:hasIncipitValue "@clef:G-2@keysig:@timesig:c@data:8-'FFGAAbB''C/C'F6-''bEED8xCCC'A/''4D";
     melod:hasIncipitText "So ist das alte Jahr begraben".

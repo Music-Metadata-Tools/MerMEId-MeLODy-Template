@@ -9,7 +9,7 @@
 @prefix mus: <http://data.doremus.org/ontology#>.
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
-@prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 
 <urn:uuid:2293419636> rdfs:label "Halleluja, lobet den Namen des Herrn";
     melod:inLanguage terms:German;
@@ -23,7 +23,7 @@
     schema:firstPerformance <urn:uuid:1412123009>;
     melod:hasPerformance <urn:uuid:3395291370>, <urn:uuid:4019778394>, <urn:uuid:603545879>;
     schema:includedComposition <urn:uuid:1921829629>, <urn:uuid:1100659433>, <urn:uuid:1298183696>, <urn:uuid:2824638156>, <urn:uuid:926630544>, <urn:uuid:2277979240>;
-    schema:isPartOf <urn:uuid:2372423187>.
+    melod:isExpressionPartOf <urn:uuid:2372423187>.
 _:a849c0fe-1fff-4747-ab7f-aa5467425145 rdfs:label "Liturgische Bestimmung";
     melod:paragraph "Neujahr (1.1.)";
     a melod:Annotation.

@@ -9,7 +9,7 @@
 @prefix mus: <http://data.doremus.org/ontology#>.
 @prefix terms: <https://lod.academy/melod/vocab/terms#>.
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
-@prefix efrbroo: <http://www.cidoc-crm.org/efrbroo/>.
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 
 <urn:uuid:2824638156> rdfs:label "Aria";
     melod:inLanguage terms:German;
@@ -24,6 +24,6 @@ _:07842f6e-5fbe-418b-a989-03d6b2a86e17 melod:hasPitch terms:C;
     a melod:Key.
 _:a6984232-174d-4669-bc68-1a446a1f406f a melod:Meter;
     melod:usesMeterSymbol "common".
-_:62b11fd6-d288-4429-a27c-1d9c519bae49 a schema:MusicIncipit;
+_:62b11fd6-d288-4429-a27c-1d9c519bae49 a melod:MusicIncipit;
     melod:hasIncipitValue "@clef:G-2@keysig:bBEA@timesig:c@data:''4D{8.G'6G}''4C{8DE}/{C'B}4AG8-''nE/{6FA8F}{6nE3DC8F}{'6B''D8C}{'6nA3GF8B}/", "@clef:G-2@keysig:bBEA@timesig:c@data:2-''4D{8.G'6G}/''4C8DEC'B4A/G8-''D6E{3FG}8F6E{3C'B}''8E/";
     melod:hasIncipitText "Legt Lob und Dank zu Jesu Füßen".
