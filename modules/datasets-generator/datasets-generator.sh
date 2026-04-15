@@ -1,3 +1,5 @@
+CI_PROJECT_DIR="{GITHUB_WORKSPACE:-(pwd)}"
+
 contents_dir_path=$CI_PROJECT_DIR/contents
 persons_dir_path=$CI_PROJECT_DIR/persons
 institutions_dir_path=$CI_PROJECT_DIR/institutions
