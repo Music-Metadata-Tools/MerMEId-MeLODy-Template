@@ -11,7 +11,7 @@
 @prefix mus: <http://data.doremus.org/ontology#>.
 @prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 
-<urn:uuid:1447117359> schema:name "Universitätsbibliothek Johann Christian Senckenberg";
+<urn:uuid:institutions/1447117359> schema:name "Universitätsbibliothek Johann Christian Senckenberg";
     melod:hasAbbreviation "D-F";
-    schema:location <urn:uuid:2023822932>;
+    schema:location <urn:uuid:places/2023822932>;
     a melod:Institution.

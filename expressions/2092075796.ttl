@@ -11,7 +11,7 @@
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
 @prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 
-<urn:uuid:2092075796> rdfs:label "Durch Trauern und durch Plagen (Choral)";
+<urn:uuid:expressions/2092075796> rdfs:label "Durch Trauern und durch Plagen (Choral)";
     melod:inLanguage terms:German;
     melod:completionStatus terms:CompleteExpression;
     melod:hasClassification "Choral";

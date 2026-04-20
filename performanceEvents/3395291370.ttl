@@ -11,8 +11,8 @@
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 
-<urn:uuid:3395291370> rdfs:label "Aufführung";
-    melod:hasVenue <urn:uuid:2096486337>;
+<urn:uuid:performanceEvents/3395291370> rdfs:label "Aufführung";
+    melod:hasVenue <urn:uuid:venues/2096486337>;
     schema:description "Nach Datum auf dem Umschlag des Stimmenmaterials (D-B Mus.ms. 21740/250).";
     a melod:PerformanceEvent;
     melod:hasEventDate _:5e58e2b5-942a-4282-b682-db7e42824c25.

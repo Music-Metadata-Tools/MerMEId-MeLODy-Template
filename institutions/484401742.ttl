@@ -11,7 +11,7 @@
 @prefix mus: <http://data.doremus.org/ontology#>.
 @prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 
-<urn:uuid:484401742> schema:name "Staatsbibliothek zu Berlin - Preußischer Kulturbesitz";
+<urn:uuid:institutions/484401742> schema:name "Staatsbibliothek zu Berlin - Preußischer Kulturbesitz";
     melod:hasAbbreviation "D-B";
     owl:sameAs <https://rism.online/institutions/30000655>;
     schema:location <urn:uuid:places/2884711907>;

@@ -11,14 +11,14 @@
 @prefix mus: <http://data.doremus.org/ontology#>.
 @prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 
-<urn:uuid:268258228> schema:genre terms:ArticleJournal;
+<urn:uuid:bibliography/268258228> schema:genre terms:ArticleJournal;
     a melod:Bibliography;
     melod:hasTitle _:5c702e9b-9e74-4f6b-a6df-f6cc139696a0, _:040e8d99-57ae-4f0e-b6c3-63804f3142b8;
     schema:publication _:efc1c96e-1b0a-42e0-bc06-ff2fb0236cf3;
     schema:pagination "216-291";
     schema:position "2004";
     melod:hasClassification "Forschungsliteratur";
-    schema:description "S. 262 Aufführungsnotiz in den <rend fontstyle=\"italic\">Berlinischen Nachrichten von Staats- und gelehrten Sachen</rend> vom 29. Mai 1762.".
+    schema:description "S. 262 Aufführungsnotiz in den <i>Berlinischen Nachrichten von Staats- und gelehrten Sachen</i> vom 29. Mai 1762.".
 _:5c702e9b-9e74-4f6b-a6df-f6cc139696a0 rdfs:label "Das Konzertleben in der preußischen Hauptstadt 1740-1786 im Spiegel der Berliner Presse (Teil I)";
     melod:hasTitleLevel terms:a;
     a melod:Title.

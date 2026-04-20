@@ -11,8 +11,10 @@ construct {
   select ?person_iri ?full_name where {
     ?person_iri a melod:Person .
     ?person_iri schema:familyName ?family_name .
-    ?person_iri schema:givenName ?given_name .
-    bind(concat(?family_name, ", ", ?given_name) AS ?full_name)
+    OPTIONAL {
+      ?person_iri schema:givenName ?given_name .
+    }
+    bind(coalesce(concat(?family_name, ", ", ?given_name), ?family_name) AS ?full_name)
   }
   order by ?full_name
 }

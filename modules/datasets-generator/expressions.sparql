@@ -11,12 +11,15 @@ construct {
 } where {
   select ?expression_iri ?label where {
     ?expression_iri a melod:Expression .
-    ?expression_iri rdfs:label ?expression_title .
+    {?expression_iri skos:prefLabel ?expression_label .}
+    UNION {
+      ?expression_iri rdfs:label ?expression_label .
+    }
     OPTIONAL {
       ?expression_iri melod:hasIncipit ?incipit_iri .
       ?incipit_iri melod:hasIncipitText ?incipit_text .
     }
-    bind(coalesce(concat(?expression_title, " ('", ?incipit_text, "')"), ?expression_title) AS ?label)
+    bind(coalesce(concat(?expression_label, " ('", ?incipit_text, "')"), ?expression_label) AS ?label)
   }
   order by ?label
 }

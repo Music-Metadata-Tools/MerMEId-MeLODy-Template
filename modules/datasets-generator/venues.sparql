@@ -6,12 +6,16 @@ prefix schema: <https://schema.org/>
 
 construct {
   ?venue_iri a melod:Venue ;
-  	skos:prefLabel ?label .
+  	skos:prefLabel ?label ;
+    skos:broader ?place .
 } where {
-  select ?venue_iri ?label where {
+  select ?venue_iri ?label ?place where {
     ?venue_iri a melod:Venue .
-    ?venue_iri schema:name ?venue_name .
-    bind(?venue_name AS ?label)
+    ?venue_iri schema:name ?label .
+    OPTIONAL {
+        ?venue_iri schema:containedInPlace ?place_iri .
+        ?place_iri schema:name ?place .
+    }
   }
   order by ?label
 }

@@ -11,7 +11,7 @@
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
 @prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 
-<urn:uuid:926630544> rdfs:label "Choral";
+<urn:uuid:expressions/926630544> rdfs:label "Choral";
     melod:inLanguage terms:German;
     melod:completionStatus terms:CompleteExpression;
     a melod:Expression;

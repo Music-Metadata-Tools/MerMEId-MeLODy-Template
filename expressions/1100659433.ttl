@@ -11,12 +11,12 @@
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
 @prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 
-<urn:uuid:1100659433> rdfs:label "Choral";
+<urn:uuid:expressions/1100659433> rdfs:label "Choral";
     melod:completionStatus terms:CompleteExpression;
     a melod:Expression;
     mus:U11_has_key _:b2e368e5-4fe8-4ef9-b909-5b6bddfccef4;
     melod:hasMeter _:740b3b9c-24f1-44eb-9853-112af44958a6;
-    melod:hasInstrumentation <urn:uuid:1134679629>;
+    melod:hasInstrumentation <urn:uuid:instrumentations/1134679629>;
     melod:hasIncipit _:05cfc9e8-40ba-4db8-a40f-8ce9d26be39f;
     schema:description "Auf die Melodie des Chorals <rend fontstyle=\"italic\">Herzlich tut mich verlangen</rend>.".
 _:b2e368e5-4fe8-4ef9-b909-5b6bddfccef4 melod:hasPitch terms:E;

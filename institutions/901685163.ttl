@@ -11,7 +11,7 @@
 @prefix mus: <http://data.doremus.org/ontology#>.
 @prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 
-<urn:uuid:901685163> schema:name "Sing-Akademie";
+<urn:uuid:institutions/901685163> schema:name "Sing-Akademie";
     melod:hasAbbreviation "D-Bsa";
     owl:sameAs <https://rism.online/institutions/20000001>;
     schema:location <urn:uuid:places/2884711907>;

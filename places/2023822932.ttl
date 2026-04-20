@@ -5,6 +5,6 @@
 @prefix sh: <http://www.w3.org/ns/shacl#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 
-<urn:uuid:2023822932> schema:name "Frankfurt a. M.";
+<urn:uuid:places/2023822932> schema:name "Frankfurt a. M.";
     owl:sameAs <https://www.geonames.org/2925533>;
     a melod:Place.

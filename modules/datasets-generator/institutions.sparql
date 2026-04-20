@@ -6,13 +6,21 @@ prefix schema: <https://schema.org/>
 
 construct {
   ?institution_iri a melod:Institution ;
-  	skos:prefLabel ?label .
+  	skos:prefLabel ?label ;
+    skos:broader ?siglum .
 } where {
-  select ?institution_iri ?label where {
+  select ?institution_iri ?label ?siglum where {
     ?institution_iri a melod:Institution .
     ?institution_iri schema:name ?institution_name .
-    ?institution_iri melod:hasAbbreviation ?abbr .
-    bind(concat(?abbr, " (", ?institution_name, ")") AS ?label)
+    OPTIONAL {
+      {
+        ?institution_iri melod:hasAbbreviation ?abbr .
+      } UNION {
+        ?institution_iri melod:hasSiglum ?abbr .
+        bind('RISM' AS ?siglum) .
+      }
+    }
+    bind(coalesce(concat(?abbr, " (", ?institution_name, ")"), ?institution_name) AS ?label)
   }
   order by ?label
 }

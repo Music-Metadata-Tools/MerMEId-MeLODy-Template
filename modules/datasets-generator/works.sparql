@@ -7,14 +7,43 @@ prefix terms: <https://lod.academy/melod/vocab/terms#>
 
 construct {
   ?work_iri a melod:WorkEntity ;
-  	skos:prefLabel ?label .
+  	skos:prefLabel ?label ;
+    skos:altLabel ?title_uniform_label ;
+    skos:altLabel ?title_alternative_label ;
+    skos:broader ?classification ;
+    schema:composer ?composer .
 } where {
-  select ?work_iri ?label where {
+  select ?work_iri ?label ?classification ?title_uniform_label ?title_alternative_label ?composer where {
     ?work_iri a melod:Work .
     ?work_iri melod:hasTitle ?title_subj .
     ?title_subj melod:hasTitleType terms:MainTitle .
     ?title_subj rdfs:label ?work_title .
-    bind(?work_title AS ?label)
+    bind(?work_title AS ?label).
+    OPTIONAL {
+      ?work_iri melod:hasTitle ?title_uniform .
+      ?title_uniform melod:hasTitleType terms:UniformTitle .
+      ?title_uniform rdfs:label ?title_uniform_label .
+    }
+    OPTIONAL {
+      ?work_iri melod:hasTitle ?title_alternative .
+      ?title_alternative melod:hasTitleType terms:AlternativeTitle .
+      ?title_alternative rdfs:label ?title_alternative_label .
+    }
+    OPTIONAL {
+      ?work_iri melod:hasClassification ?classification .
+    }
+    OPTIONAL {
+      ?work_iri melod:hasContribution ?contribution .
+      ?contribution melod:hasRole terms:Composer .
+      ?contribution melod:hasAgent ?composer_iri .
+      ?composer_iri a melod:Person .
+      ?composer_iri schema:familyName ?family_name .
+      OPTIONAL {
+        ?composer_iri schema:givenName ?given_name .
+      }
+      bind(coalesce(concat(?family_name, ", ", ?given_name), ?family_name) AS ?composer) .
+      }
+
   }
   order by ?label
 }

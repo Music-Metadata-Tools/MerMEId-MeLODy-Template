@@ -7,12 +7,14 @@ prefix terms: <https://lod.academy/melod/vocab/terms#>
 
 construct {
   ?item_iri a melod:ItemEntity ;
-  	skos:prefLabel ?label .
+  	skos:prefLabel ?label ;
+    skos:broader ?classification .
 } where {
-  select ?item_iri ?label where {
+  select ?item_iri ?label ?classification where {
     ?item_iri a melod:Item .
     ?item_iri rdfs:label ?item_name .
-    bind(?item_name AS ?label)
+    bind(?item_name AS ?label) .
+    ?item_iri melod:hasClassification ?classification .
   }
   order by ?label
 }

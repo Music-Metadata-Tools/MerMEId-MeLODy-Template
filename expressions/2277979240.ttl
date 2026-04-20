@@ -11,12 +11,12 @@
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
 @prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 
-<urn:uuid:2277979240> rdfs:label "Aria";
+<urn:uuid:expressions/2277979240> rdfs:label "Aria";
     melod:hasTempo "Aufgeweckt";
     a melod:Expression;
     mus:U11_has_key _:f77d21cf-cb60-4429-9b74-9aed01f4085d;
     melod:hasMeter _:ceaa281e-d15c-4d09-943d-1ae88789ed21;
-    melod:hasInstrumentation <urn:uuid:3896901877>;
+    melod:hasInstrumentation <urn:uuid:instrumentations/3896901877>;
     melod:hasIncipit _:d7bbf93c-631d-4ae4-917a-10fc21976209.
 _:f77d21cf-cb60-4429-9b74-9aed01f4085d melod:hasPitch terms:E;
     melod:hasAccidental terms:Flat;

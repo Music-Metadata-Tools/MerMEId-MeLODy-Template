@@ -7,7 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
 
-<urn:uuid:4202043203> schema:familyName "Neumeister";
+<urn:uuid:persons/4202043203> schema:familyName "Neumeister";
     schema:givenName "Erdmann";
     owl:sameAs <http://d-nb.info/gnd/11893094X>;
     schema:gender "male";

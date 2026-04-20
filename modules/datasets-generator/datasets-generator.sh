@@ -30,19 +30,19 @@ echo "construct the places dataset"
 time /static-publishing-backend rdf-data-aggregator $places_dir_path/ "*.ttl" $datasets_generator_dir_path/places.sparql $datasets_dir_path/places.ttl
 
 echo "construct the venues dataset"
-time /static-publishing-backend rdf-data-aggregator $venues_dir_path/ "*.ttl" $datasets_generator_dir_path/venues.sparql $datasets_dir_path/venues.ttl
+time /static-publishing-backend rdf-data-aggregator $CI_PROJECT_DIR/ "[vp]*/*.ttl" $datasets_generator_dir_path/venues.sparql $datasets_dir_path/venues.ttl
 
 echo "construct the events dataset"
 time /static-publishing-backend rdf-data-aggregator $events_dir_path/ "*.ttl" $datasets_generator_dir_path/events.sparql $datasets_dir_path/events.ttl
 
 echo "construct the performance-events dataset"
-time /static-publishing-backend rdf-data-aggregator $CI_PROJECT_DIR/ "*/*.ttl" $datasets_generator_dir_path/performanceEvents.sparql $datasets_dir_path/performanceEvents.ttl
+time /static-publishing-backend rdf-data-aggregator $CI_PROJECT_DIR/ "p*/*.ttl" $datasets_generator_dir_path/performanceEvents.sparql $datasets_dir_path/performanceEvents.ttl
 
 echo "construct the instrumentations dataset"
 time /static-publishing-backend rdf-data-aggregator $instrumentations_dir_path/ "*.ttl" $datasets_generator_dir_path/instrumentations.sparql $datasets_dir_path/instrumentations.ttl
 
 echo "construct the works dataset"
-time /static-publishing-backend rdf-data-aggregator $works_dir_path/ "*.ttl" $datasets_generator_dir_path/works.sparql $datasets_dir_path/works.ttl
+time /static-publishing-backend rdf-data-aggregator $CI_PROJECT_DIR/ "[wp]*/*.ttl" $datasets_generator_dir_path/works.sparql $datasets_dir_path/works.ttl
 
 echo "construct the expressions dataset"
 time /static-publishing-backend rdf-data-aggregator $expressions_dir_path/ "*.ttl" $datasets_generator_dir_path/expressions.sparql $datasets_dir_path/expressions.ttl

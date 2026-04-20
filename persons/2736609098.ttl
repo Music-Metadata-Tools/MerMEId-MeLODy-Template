@@ -7,7 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
 
-<urn:uuid:2736609098> schema:familyName "Telemann";
+<urn:uuid:persons/2736609098> schema:familyName "Telemann";
     schema:givenName "Georg Philipp";
     owl:sameAs <http://d-nb.info/gnd/11862119X>;
     schema:gender "male";

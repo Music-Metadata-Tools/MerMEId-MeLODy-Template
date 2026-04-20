@@ -13,8 +13,8 @@
 
 _:b935e5ef-2664-4cdd-9aaf-07b1e698887b rdfs:label "Musicalisches Lob Gottes (Nürnberg 1742-1744)";
     a melod:Title.
-<urn:uuid:1920521013> a melod:Manifestation;
+<urn:uuid:manifestations/1920521013> a melod:Manifestation;
     melod:hasTitle _:b935e5ef-2664-4cdd-9aaf-07b1e698887b;
     schema:description "Zu Fundorten des vollständigen Druckwerks siehe den Haupteintrag <rend fontstyle=\"italic\">Musicalisches Lob Gottes</rend> (Zugehörigkeit:MusLG).";
     melod:hasClassificationOfManifestation "Musikalische Quelle", "Hauptquelle";
-    lrmoo:R4_embodies <urn:uuid:2293419636>.
+    lrmoo:R4_embodies <urn:uuid:expressions/2293419636>.
