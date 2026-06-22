@@ -5,7 +5,7 @@ prefix skos: <http://www.w3.org/2004/02/skos/core#>
 prefix schema: <https://schema.org/>
 
 construct {
-  ?performanceEvent_iri a melod:PerformanceEvent ;
+  ?performanceEvent_iri a melod:PerformanceEventEntity ;
   	skos:prefLabel ?label .
 } where {
   select ?performanceEvent_iri ?label where {
