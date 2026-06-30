@@ -6,12 +6,25 @@ prefix schema: <https://schema.org/>
 
 construct {
   ?event_iri a melod:EventEntity ;
-  	skos:prefLabel ?label .
+  	skos:prefLabel ?label ;
+    skos:related ?place_iri ;
+    skos:related ?contributor_iri ;
+    skos:related ?bibliography_iri .
 } where {
-  select ?event_iri ?label where {
+  select ?event_iri ?label ?place_iri ?contributor_iri ?bibliography_iri where {
     ?event_iri a melod:Event .
     ?event_iri rdfs:label ?event_name .
-    bind(?event_name AS ?label)
+    bind(?event_name AS ?label) .
+    OPTIONAL {
+      ?event_iri schema:location ?place_iri .
+    }
+    OPTIONAL {
+      ?event_iri melod:hasContribution ?contributor_node .
+      ?contributor_node melod:hasAgent ?contributor_iri .
+    }
+    OPTIONAL {
+      ?event_iri schema:citation ?bibliography_iri .
+    }
   }
   order by ?label
 }

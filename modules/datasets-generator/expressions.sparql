@@ -7,9 +7,16 @@ prefix terms: <https://lod.academy/melod/vocab/terms#>
 
 construct {
   ?expression_iri a melod:ExpressionEntity ;
-  	skos:prefLabel ?label .
+  	skos:prefLabel ?label ;
+    skos:related ?performance_iri ;
+    skos:related ?place_iri ;
+    skos:related ?contributor_iri ;
+    skos:related ?expression_part_iri ;
+    skos:related ?event_iri ;
+    skos:related ?instrumentation_iri ;
+    skos:related ?bibliography_iri .
 } where {
-  select ?expression_iri ?label where {
+  select ?expression_iri ?label ?performance_iri ?place_iri ?contributor_iri ?expression_part_iri ?instrumentation_iri ?bibliography_iri where {
     ?expression_iri a melod:Expression .
     {?expression_iri skos:prefLabel ?expression_label .}
     UNION {
@@ -18,6 +25,31 @@ construct {
     OPTIONAL {
       ?expression_iri melod:hasIncipit ?incipit_iri .
       ?incipit_iri melod:hasIncipitText ?incipit_text .
+    }
+    OPTIONAL {
+      ?expression_iri melod:hasPerformance ?performance_iri .
+    }
+    OPTIONAL {
+      ?expression_iri schema:firstPerformance ?performance_iri .
+    }
+    OPTIONAL {
+      ?expression_iri schema:locationCreated ?place_iri .
+    }
+    OPTIONAL {
+      ?expression_iri melod:hasContribution ?contributor_node .
+      ?contributor_node melod:hasAgent ?contributor_iri .
+    }
+    OPTIONAL {
+      ?expression_iri melod:hasExpressionPart ?expression_part_iri .
+    }
+    OPTIONAL {
+      ?expression_iri melod:hasHistoricEvent ?event_iri .
+    }
+    OPTIONAL {
+      ?expression_iri melod:hasInstrumentation ?instrumentation_iri .
+    }
+    OPTIONAL {
+      ?expression_iri schema:citation ?bibliography_iri .
     }
     bind(coalesce(concat(?expression_label, " ('", ?incipit_text, "')"), ?expression_label) AS ?label)
   }
