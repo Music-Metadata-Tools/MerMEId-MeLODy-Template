@@ -5,11 +5,13 @@ prefix skos: <http://www.w3.org/2004/02/skos/core#>
 prefix schema: <https://schema.org/>
 
 construct {
-  ?institution_iri a melod:Institution ;
+  ?institution_iri a melod:InstitutionEntity ;
   	skos:prefLabel ?label ;
-    skos:broader ?siglum .
+    skos:broader ?siglum ;
+    skos:broader ?place ;
+    skos:related ?place_iri .
 } where {
-  select ?institution_iri ?label ?siglum where {
+  select ?institution_iri ?label ?siglum ?place_iri ?place where {
     ?institution_iri a melod:Institution .
     ?institution_iri schema:name ?institution_name .
     OPTIONAL {
@@ -19,6 +21,12 @@ construct {
         ?institution_iri melod:hasSiglum ?abbr .
         bind('RISM' AS ?siglum) .
       }
+    }
+    OPTIONAL {
+        ?institution_iri schema:location ?place_iri .
+    }
+    OPTIONAL {
+        ?place_iri schema:name ?place .
     }
     bind(coalesce(concat(?abbr, " (", ?institution_name, ")"), ?institution_name) AS ?label)
   }

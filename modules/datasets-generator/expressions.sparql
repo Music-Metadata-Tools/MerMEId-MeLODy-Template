@@ -14,9 +14,10 @@ construct {
     skos:related ?expression_part_iri ;
     skos:related ?event_iri ;
     skos:related ?instrumentation_iri ;
-    skos:related ?bibliography_iri .
+    skos:related ?bibliography_iri ;
+    skos:broader ?classification .
 } where {
-  select ?expression_iri ?label ?performance_iri ?place_iri ?contributor_iri ?expression_part_iri ?instrumentation_iri ?bibliography_iri where {
+  select ?expression_iri ?label ?performance_iri ?place_iri ?contributor_iri ?expression_part_iri ?instrumentation_iri ?bibliography_iri ?classification where {
     ?expression_iri a melod:Expression .
     {?expression_iri skos:prefLabel ?expression_label .}
     UNION {
@@ -50,6 +51,9 @@ construct {
     }
     OPTIONAL {
       ?expression_iri schema:citation ?bibliography_iri .
+    }
+    OPTIONAL {
+      ?expression_iri melod:hasClassification ?classification .
     }
     bind(coalesce(concat(?expression_label, " ('", ?incipit_text, "')"), ?expression_label) AS ?label)
   }

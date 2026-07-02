@@ -6,7 +6,7 @@ prefix schema: <https://schema.org/>
 prefix terms: <https://lod.academy/melod/vocab/terms#>
 
 construct {
-  ?bibl_iri a melod:Bibliography ;
+  ?bibl_iri a melod:BibliographyEntity ;
   	skos:prefLabel ?label .
 } where {
   select ?bibl_iri ?label where {

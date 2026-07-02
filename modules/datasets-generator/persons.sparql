@@ -5,7 +5,7 @@ prefix skos: <http://www.w3.org/2004/02/skos/core#>
 prefix schema: <https://schema.org/>
 
 construct {
-  ?person_iri a melod:Person ;
+  ?person_iri a melod:PersonEntity ;
   	skos:prefLabel ?full_name .
 } where {
   select ?person_iri ?full_name where {

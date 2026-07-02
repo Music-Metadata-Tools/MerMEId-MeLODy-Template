@@ -5,7 +5,7 @@ prefix skos: <http://www.w3.org/2004/02/skos/core#>
 prefix schema: <https://schema.org/>
 
 construct {
-  ?venue_iri a melod:Venue ;
+  ?venue_iri a melod:VenueEntity ;
   	skos:prefLabel ?label ;
     skos:broader ?place ;
     skos:related ?place_iri .
