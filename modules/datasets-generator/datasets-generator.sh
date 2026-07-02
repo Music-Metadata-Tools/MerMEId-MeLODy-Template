@@ -13,6 +13,7 @@ expressions_dir_path=$CI_PROJECT_DIR/expressions
 manifestations_dir_path=$CI_PROJECT_DIR/manifestations
 items_dir_path=$CI_PROJECT_DIR/items
 bibliography_dir_path=$CI_PROJECT_DIR/bibliography
+letters_dir_path=$CI_PROJECT_DIR/letters
 modules_dir_path=$CI_PROJECT_DIR/modules
 datasets_generator_dir_path=$modules_dir_path/datasets-generator
 public_dir_path=$CI_PROJECT_DIR/public
@@ -55,3 +56,6 @@ time /static-publishing-backend rdf-data-aggregator $items_dir_path/ "*.ttl" $da
 
 echo "construct the bibliography dataset"
 time /static-publishing-backend rdf-data-aggregator $bibliography_dir_path/ "*.ttl" $datasets_generator_dir_path/bibliography.sparql $datasets_dir_path/bibliography.ttl
+
+echo "construct the letters dataset"
+time /static-publishing-backend rdf-data-aggregator $letters_dir_path/ "*.ttl" $datasets_generator_dir_path/letters.sparql $datasets_dir_path/letters.ttl
