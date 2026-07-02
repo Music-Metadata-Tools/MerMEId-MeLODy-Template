@@ -24,9 +24,9 @@ construct {
     }
     OPTIONAL {
         ?institution_iri schema:location ?place_iri .
-    }
-    OPTIONAL {
-        ?place_iri schema:name ?place .
+        OPTIONAL {
+          ?place_iri schema:name ?place .
+      }
     }
     bind(coalesce(concat(?abbr, " (", ?institution_name, ")"), ?institution_name) AS ?label)
   }
