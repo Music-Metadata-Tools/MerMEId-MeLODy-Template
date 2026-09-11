@@ -6,11 +6,21 @@ prefix schema: <https://schema.org/>
 
 construct {
   ?letter_iri a melod:Letter ;
-  	skos:prefLabel ?label .
+  	skos:prefLabel ?label ;
+    skos:related ?person_iri ;
+    skos:related ?place_iri .
 } where {
-  select ?letter_iri ?label where {
+  select ?letter_iri ?label ?person_iri ?place_iri where {
     ?letter_iri a melod:Letter .
     ?letter_iri rdfs:label ?letter_title .
+    OPTIONAL {
+      ?letter_iri cs:hasCorrespAction ?corresp_node .
+      ?corresp_node cs:hasParticipant ?person_iri .
+    }
+    OPTIONAL {
+      ?letter_iri cs:hasCorrespAction ?corresp_node .
+      ?corresp_node cs:tookPlaceAt ?place_iri .
+    }
     bind(?letter_title AS ?label)
   }
   order by ?label

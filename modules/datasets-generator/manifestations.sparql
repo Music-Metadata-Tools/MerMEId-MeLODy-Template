@@ -11,9 +11,10 @@ construct {
   	skos:prefLabel ?label ;
     skos:broader ?classification ;
     skos:related ?expression_iri ;
-    skos:related ?manifestation_part_iri .
+    skos:related ?manifestation_part_iri ;
+    skos:related ?collection_iri .
 } where {
-  select ?manifestation_iri ?label ?classification ?expression_iri ?manifestation_part_iri where {
+  select ?manifestation_iri ?label ?classification ?expression_iri ?manifestation_part_iri ?collection_iri where {
     ?manifestation_iri a melod:Manifestation .
     ?manifestation_iri melod:hasTitle ?title_subj .
     ?title_subj rdfs:label ?manifestation_title .
@@ -29,6 +30,9 @@ construct {
     }
     OPTIONAL {
       ?manifestation_iri melod:hasManifestationPart ?manifestation_part_iri .
+    }
+    OPTIONAL {
+      ?manifestation_iri melod:memberOfDataCollection ?collection_iri .
     }
   }
   order by ?label

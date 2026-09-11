@@ -17,6 +17,7 @@ construct {
     OPTIONAL {
       {
         ?institution_iri melod:hasAbbreviation ?abbr .
+        bind('Organization' AS ?siglum) .
       } UNION {
         ?institution_iri melod:hasSiglum ?abbr .
         bind('RISM' AS ?siglum) .

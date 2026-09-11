@@ -16,9 +16,10 @@ construct {
     skos:related ?expression_iri ;
     skos:related ?contributor_iri ;
     skos:related ?work_part_iri ;
-    skos:related ?bibliography_iri .
+    skos:related ?bibliography_iri ;
+    skos:related ?collection_iri .
 } where {
-  select ?work_iri ?label ?classification ?uniform_label ?alternative_label ?other_label ?expression_iri ?contributor_iri ?work_part_iri ?bibliography_iri where {
+  select ?work_iri ?label ?classification ?uniform_label ?alternative_label ?other_label ?expression_iri ?contributor_iri ?work_part_iri ?bibliography_iri ?collection_iri where {
     ?work_iri a melod:Work .
     ?work_iri melod:hasTitle ?title_subj .
     ?title_subj melod:hasTitleType terms:MainTitle .
@@ -57,6 +58,9 @@ construct {
     }
     OPTIONAL {
       ?work_iri schema:citation ?bibliography_iri .
+    }
+    OPTIONAL {
+      ?work_iri melod:memberOfDataCollection ?collection_iri .
     }
   }
   order by ?label
