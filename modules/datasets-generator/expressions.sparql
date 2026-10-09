@@ -47,6 +47,9 @@ construct {
       ?expression_iri melod:hasExpressionPart ?expression_part_iri .
     }
     OPTIONAL {
+      ?expression_iri schema:includedComposition ?expression_part_iri .
+    }
+    OPTIONAL {
       ?expression_iri melod:hasHistoricEvent ?event_iri .
       FILTER(isIRI(?event_iri)) .
     }
