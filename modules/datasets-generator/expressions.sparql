@@ -20,10 +20,11 @@ construct {
 } where {
   select ?expression_iri ?label ?performance_iri ?place_iri ?contributor_iri ?expression_part_iri ?instrumentation_iri ?bibliography_iri ?classification ?incipit_mei where {
     ?expression_iri a melod:Expression .
-    OPTIONAL { 
-      ?expression_iri rdfs:label ?label . 
+    {?expression_iri rdfs:label ?expression_label .}
+    UNION {
+      FILTER NOT EXISTS { ?expression_iri rdfs:label ?anyLabel }
+      BIND(STR(?expression_iri) AS ?expression_label)
     }
-    bind(COALESCE(?label, STR(?expression_iri)) AS ?expression_label)
     OPTIONAL {
       ?expression_iri melod:hasIncipit ?incipit_iri .
       ?incipit_iri melod:hasIncipitText ?incipit_text .
