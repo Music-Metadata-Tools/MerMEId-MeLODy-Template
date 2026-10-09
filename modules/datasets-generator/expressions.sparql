@@ -55,6 +55,10 @@ construct {
     OPTIONAL {
       ?expression_iri melod:hasClassification ?classification .
     }
+    OPTIONAL {
+      ?expression_iri melod:hasIncipit ?incipit_node .
+      ?incipit_node melod:hasMEIScore ?incipit_iri .
+    }
     bind(coalesce(concat(?expression_label, " ('", ?incipit_text, "')"), ?expression_label) AS ?label)
   }
   order by ?label
