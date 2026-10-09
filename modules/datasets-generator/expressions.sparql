@@ -20,9 +20,9 @@ construct {
 } where {
   select ?expression_iri ?label ?performance_iri ?place_iri ?contributor_iri ?expression_part_iri ?instrumentation_iri ?bibliography_iri ?classification ?incipit_mei where {
     ?expression_iri a melod:Expression .
-    {?expression_iri skos:prefLabel ?expression_label .}
+    {?expression_iri rdfs:label ?expression_label .}
     UNION {
-      ?expression_iri rdfs:label ?expression_label .
+      bind(STRAFTER(STR(?expression_iri), "urn:uuid:") AS ?expression_label)
     }
     OPTIONAL {
       ?expression_iri melod:hasIncipit ?incipit_iri .
