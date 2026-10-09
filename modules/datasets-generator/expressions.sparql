@@ -22,7 +22,7 @@ construct {
     ?expression_iri a melod:Expression .
     {?expression_iri rdfs:label ?expression_label .}
     UNION {
-      bind(STRAFTER(STR(?expression_iri), "urn:uuid:") AS ?expression_label)
+      bind(STR(?expression_iri) AS ?expression_label)
     }
     OPTIONAL {
       ?expression_iri melod:hasIncipit ?incipit_iri .
