@@ -7,9 +7,10 @@ prefix terms: <https://lod.academy/melod/vocab/terms#>
 
 construct {
   ?bibl_iri a melod:BibliographyEntity ;
-  	skos:prefLabel ?label .
+  	skos:prefLabel ?label ;
+    skos:related ?person_iri .
 } where {
-  select ?bibl_iri ?label where {
+  select ?bibl_iri ?label ?person_iri where {
     ?bibl_iri a melod:Bibliography .
      {
       ?bibl_iri melod:hasAbbreviation ?abbr .
@@ -20,6 +21,12 @@ construct {
       ?title_subj rdfs:label ?bibl_title .
       FILTER NOT EXISTS { ?bibl_iri melod:hasAbbreviation ?abbr }
       bind(?bibl_title AS ?label)
+    }
+    OPTIONAL {
+      ?bibl_iri schema:author ?person_iri .
+    }
+    OPTIONAL {
+      ?bibl_iri melod:hasEditor ?person_iri .
     }
   }
   order by ?label
