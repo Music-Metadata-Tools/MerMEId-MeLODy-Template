@@ -14,9 +14,10 @@ construct {
     skos:related ?manifestation_part_iri ;
     skos:related ?collection_iri ;
     skos:related ?publisher_iri ;
-    skos:related ?contributor_iri .
+    skos:related ?contributor_iri ;
+    skos:related ?place_iri .
 } where {
-  select ?manifestation_iri ?label ?classification ?expression_iri ?manifestation_part_iri ?collection_iri ?contributor_iri ?publisher_iri where {
+  select ?manifestation_iri ?label ?classification ?expression_iri ?manifestation_part_iri ?collection_iri ?contributor_iri ?publisher_iri ?place_iri where {
     ?manifestation_iri a melod:Manifestation .
     OPTIONAL { 
       ?manifestation_iri melod:hasTitle ?title_subj .
@@ -45,7 +46,12 @@ construct {
     }
     OPTIONAL {
       ?manifestation_iri schema:publication ?publication_node .
-      ?publication_node schema:publishedBy ?publisher_iri .
+      OPTIONAL {
+        ?publication_node schema:publishedBy ?publisher_iri .
+      }
+      OPTIONAL {
+        ?publication_node schema:location ?place_iri .
+      }
     }
   }
   order by ?label
