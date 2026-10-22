@@ -8,9 +8,10 @@ prefix terms: <https://lod.academy/melod/vocab/terms#>
 construct {
   ?bibl_iri a melod:BibliographyEntity ;
   	skos:prefLabel ?label ;
-    skos:related ?person_iri .
+    skos:related ?person_iri ;
+    skos:related ?place_iri .
 } where {
-  select ?bibl_iri ?label ?person_iri where {
+  select ?bibl_iri ?label ?person_iri ?place_iri where {
     ?bibl_iri a melod:Bibliography .
      {
       ?bibl_iri melod:hasAbbreviation ?abbr .
@@ -27,6 +28,15 @@ construct {
     }
     OPTIONAL {
       ?bibl_iri melod:hasEditor ?person_iri .
+    }
+    OPTIONAL {
+      ?bibl_iri schema:publication ?publication_node .
+      OPTIONAL {
+        ?publication_node schema:publishedBy ?person_iri .
+      }
+      OPTIONAL {
+        ?publication_node schema:location ?place_iri .
+      }
     }
   }
   order by ?label
