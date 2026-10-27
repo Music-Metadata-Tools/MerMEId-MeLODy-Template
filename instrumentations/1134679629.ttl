@@ -6,53 +6,80 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix mus: <http://data.doremus.org/ontology#>.
-@prefix terms: <https://lod.academy/melod/vocab/terms#>.
+@prefix terms: <https://mermeid-data-model-efbf77.pages.gitlab.rlp.net/>.
 @prefix melodTerms: <https://lod.academy/melod/vocab/terms#>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
+@prefix dash: <http://datashapes.org/dash#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
 
-<urn:uuid:instrumentations/1134679629> rdfs:label "1., 2., B. ad lib., 3 Trp., Pk., 2 V., Va. ad lib., B.c";
+<urn:uuid:instrumentations/1134679629> rdfs:label "Erste Stimme, Zweite Stimme, Erste Stimme, Zweite Stimme, B ad lib., 3 Trp., Pk., 2 V., Va. ad lib., B.c.";
     a melod:Instrumentation;
-    melod:hasInstrumentationDetail _:7995f0ac-cb72-4a68-b43a-f21eb2c04f32, _:ab0acef6-012b-4612-ae1f-ed0fd18f823f, _:1024934a-5a6f-40ee-a491-886c412e9fe1, _:075b9bee-d792-4b6d-bd33-46a959960f3e, _:5882f6dd-7c12-4754-9326-a38f9948e4b4, _:77ea7a2d-94a6-4419-8010-1e685de5a40e, _:c915db58-8cd6-4df1-a213-b476e0696127, _:403fdbd3-2f02-4123-9a32-e5326944c2b5, _:0558a8e1-bc5a-438f-83fb-56327167d106, _:88e9f16f-e0f5-4dfb-ad4f-09a153cc9038.
-_:7995f0ac-cb72-4a68-b43a-f21eb2c04f32 mus:U2_foresees_use_of_medium_of_performance melodTerms:Soprano;
-    owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#va>;
+    melod:hasInstrumentationDetail _:b8_7995f0ac-cb72-4a68-b43a-f21eb2c04f32, _:b8_ab0acef6-012b-4612-ae1f-ed0fd18f823f, _:b8_1024934a-5a6f-40ee-a491-886c412e9fe1, _:b8_075b9bee-d792-4b6d-bd33-46a959960f3e, _:b8_5882f6dd-7c12-4754-9326-a38f9948e4b4, _:b8_77ea7a2d-94a6-4419-8010-1e685de5a40e, _:b8_c915db58-8cd6-4df1-a213-b476e0696127, _:b8_403fdbd3-2f02-4123-9a32-e5326944c2b5, _:b8_0558a8e1-bc5a-438f-83fb-56327167d106, _:b8_88e9f16f-e0f5-4dfb-ad4f-09a153cc9038;
+    dct:conformsTo melod:Instrumentation.
+_:b8_7995f0ac-cb72-4a68-b43a-f21eb2c04f32 schema:position 1;
+    mus:U2_foresees_use_of_medium_of_performance melodTerms:Soprano;
+    schema:description "Erste Stimme";
     mus:U30_foresees_quantity_of_medium_of_performance 1;
+    owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#va>;
     melod:isSoloist true;
     a melod:InstrumentationDetail.
-_:ab0acef6-012b-4612-ae1f-ed0fd18f823f mus:U2_foresees_use_of_medium_of_performance melodTerms:Soprano;
+_:b8_ab0acef6-012b-4612-ae1f-ed0fd18f823f schema:position 3;
+    mus:U2_foresees_use_of_medium_of_performance melodTerms:Soprano;
+    schema:description "Erste Stimme";
+    mus:U30_foresees_quantity_of_medium_of_performance 1;
     owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#va>;
-    mus:U30_foresees_quantity_of_medium_of_performance 1;
     a melod:InstrumentationDetail.
-_:1024934a-5a6f-40ee-a491-886c412e9fe1 mus:U2_foresees_use_of_medium_of_performance melodTerms:Alto;
-    owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#vc>;
+_:b8_1024934a-5a6f-40ee-a491-886c412e9fe1 schema:position 2;
+    mus:U2_foresees_use_of_medium_of_performance melodTerms:Alto;
+    schema:description "Zweite Stimme";
     mus:U30_foresees_quantity_of_medium_of_performance 1;
+    owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#vc>;
     melod:isSoloist true;
     a melod:InstrumentationDetail.
-_:075b9bee-d792-4b6d-bd33-46a959960f3e mus:U2_foresees_use_of_medium_of_performance melodTerms:Alto;
-    owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#vc>;
+_:b8_075b9bee-d792-4b6d-bd33-46a959960f3e schema:position 4;
+    mus:U2_foresees_use_of_medium_of_performance melodTerms:Alto;
+    schema:description "Zweite Stimme";
     mus:U30_foresees_quantity_of_medium_of_performance 1;
+    owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#vc>;
     a melod:InstrumentationDetail.
-_:5882f6dd-7c12-4754-9326-a38f9948e4b4 mus:U2_foresees_use_of_medium_of_performance melodTerms:Bass;
+_:b8_5882f6dd-7c12-4754-9326-a38f9948e4b4 schema:position 5;
+    mus:U2_foresees_use_of_medium_of_performance melodTerms:Bass;
+    schema:description "B";
+    mus:U30_foresees_quantity_of_medium_of_performance 1;
     owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#vf>;
-    mus:U30_foresees_quantity_of_medium_of_performance 1;
-    a melod:InstrumentationDetail.
-_:77ea7a2d-94a6-4419-8010-1e685de5a40e mus:U2_foresees_use_of_medium_of_performance melodTerms:Trumpet;
+    a melod:InstrumentationDetail;
+    melod:isAdLib true.
+_:b8_77ea7a2d-94a6-4419-8010-1e685de5a40e schema:position 6;
+    mus:U2_foresees_use_of_medium_of_performance melodTerms:Trumpet;
+    schema:description "Trp.";
+    mus:U30_foresees_quantity_of_medium_of_performance 3;
     owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#bb>;
-    mus:U30_foresees_quantity_of_medium_of_performance 1;
     a melod:InstrumentationDetail.
-_:c915db58-8cd6-4df1-a213-b476e0696127 mus:U2_foresees_use_of_medium_of_performance melodTerms:Timpani;
+_:b8_c915db58-8cd6-4df1-a213-b476e0696127 schema:position 7;
+    mus:U2_foresees_use_of_medium_of_performance melodTerms:Timpani;
+    schema:description "Pk.";
+    mus:U30_foresees_quantity_of_medium_of_performance 1;
     owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#pa>;
-    mus:U30_foresees_quantity_of_medium_of_performance 1;
     a melod:InstrumentationDetail.
-_:403fdbd3-2f02-4123-9a32-e5326944c2b5 mus:U2_foresees_use_of_medium_of_performance melodTerms:Violin;
-    owl:sameAs <https://www.loac.gov/standards/valuelist/marcmusperf.html#sa>;
+_:b8_403fdbd3-2f02-4123-9a32-e5326944c2b5 schema:position 8;
+    mus:U2_foresees_use_of_medium_of_performance melodTerms:Violin;
+    schema:description "V.";
     mus:U30_foresees_quantity_of_medium_of_performance 2;
+    owl:sameAs <https://www.loac.gov/standards/valuelist/marcmusperf.html#sa>;
     a melod:InstrumentationDetail.
-_:0558a8e1-bc5a-438f-83fb-56327167d106 mus:U2_foresees_use_of_medium_of_performance melodTerms:Viola;
+_:b8_0558a8e1-bc5a-438f-83fb-56327167d106 schema:position 9;
+    mus:U2_foresees_use_of_medium_of_performance melodTerms:Viola;
+    schema:description "Va.";
+    mus:U30_foresees_quantity_of_medium_of_performance 1;
     owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#sb>;
+    a melod:InstrumentationDetail;
+    melod:isAdLib true.
+_:b8_88e9f16f-e0f5-4dfb-ad4f-09a153cc9038 schema:position 10;
+    mus:U2_foresees_use_of_medium_of_performance melodTerms:DoubleBass;
+    schema:description "B.c.";
     mus:U30_foresees_quantity_of_medium_of_performance 1;
-    a melod:InstrumentationDetail.
-_:88e9f16f-e0f5-4dfb-ad4f-09a153cc9038 mus:U2_foresees_use_of_medium_of_performance melodTerms:DoubleBass;
     owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#ke>;
-    mus:U30_foresees_quantity_of_medium_of_performance 1;
     a melod:InstrumentationDetail.

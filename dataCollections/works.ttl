@@ -1,0 +1,8 @@
+@prefix melod: <https://lod.academy/melod/vocab/ontology#> .
+@prefix schema: <https://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<urn:uuid:dataCollections/works> a melod:DataCollection ;
+    rdfs:label "All works" ;
+    melod:hasClassification "work catalog" ;
+    schema:includedInDataCatalog <urn:uuid:dataCatalogs/catalog> .

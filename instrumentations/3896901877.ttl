@@ -6,32 +6,47 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix mus: <http://data.doremus.org/ontology#>.
-@prefix terms: <https://lod.academy/melod/vocab/terms#>.
+@prefix terms: <https://mermeid-data-model-efbf77.pages.gitlab.rlp.net/>.
 @prefix melodTerms: <https://lod.academy/melod/vocab/terms#>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
+@prefix dash: <http://datashapes.org/dash#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
 
-<urn:uuid:instrumentations/3896901877> rdfs:label "2., B.c., V., Pk., Trp.";
+<urn:uuid:instrumentations/3896901877> rdfs:label "Zweite Stimme, 3 Trp., Pk., 2 V., B.c.";
     a melod:Instrumentation;
-    melod:hasInstrumentationDetail _:7bbdd18b-867b-4bd5-87cc-f394f1ec4042, _:0738c60b-b062-454c-a805-d19d412f4d38, _:cbc2f39a-8143-49c3-aed6-770bc43ce172, _:d0d0d16c-861f-43e3-bfbc-9b6396d9ddd3, _:f1982660-cde5-4694-aa65-6d2882e7e12d.
-_:7bbdd18b-867b-4bd5-87cc-f394f1ec4042 mus:U2_foresees_use_of_medium_of_performance melodTerms:Alto;
-    owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#vc>;
+    melod:hasInstrumentationDetail _:b17_7bbdd18b-867b-4bd5-87cc-f394f1ec4042, _:b17_0738c60b-b062-454c-a805-d19d412f4d38, _:b17_cbc2f39a-8143-49c3-aed6-770bc43ce172, _:b17_d0d0d16c-861f-43e3-bfbc-9b6396d9ddd3, _:b17_f1982660-cde5-4694-aa65-6d2882e7e12d;
+    dct:conformsTo melod:Instrumentation.
+_:b17_7bbdd18b-867b-4bd5-87cc-f394f1ec4042 schema:position 1;
+    mus:U2_foresees_use_of_medium_of_performance melodTerms:Alto;
+    schema:description "Zweite Stimme";
     mus:U30_foresees_quantity_of_medium_of_performance 1;
+    owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#vc>;
     melod:isSoloist true;
     a melod:InstrumentationDetail.
-_:0738c60b-b062-454c-a805-d19d412f4d38 mus:U2_foresees_use_of_medium_of_performance melodTerms:DoubleBass;
+_:b17_0738c60b-b062-454c-a805-d19d412f4d38 schema:position 5;
+    mus:U2_foresees_use_of_medium_of_performance melodTerms:DoubleBass;
+    schema:description "B.c.";
+    mus:U30_foresees_quantity_of_medium_of_performance 1;
     owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#ke>;
-    mus:U30_foresees_quantity_of_medium_of_performance 1;
     a melod:InstrumentationDetail.
-_:cbc2f39a-8143-49c3-aed6-770bc43ce172 mus:U2_foresees_use_of_medium_of_performance melodTerms:Violin;
-    owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#sa>;
+_:b17_cbc2f39a-8143-49c3-aed6-770bc43ce172 schema:position 4;
+    mus:U2_foresees_use_of_medium_of_performance melodTerms:Violin;
+    schema:description "V.";
     mus:U30_foresees_quantity_of_medium_of_performance 2;
+    owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#sa>;
     a melod:InstrumentationDetail.
-_:d0d0d16c-861f-43e3-bfbc-9b6396d9ddd3 mus:U2_foresees_use_of_medium_of_performance melodTerms:Timpani;
-    owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#pa>;
+_:b17_d0d0d16c-861f-43e3-bfbc-9b6396d9ddd3 schema:position 3;
+    mus:U2_foresees_use_of_medium_of_performance melodTerms:Timpani;
+    schema:description "Pk.";
     mus:U30_foresees_quantity_of_medium_of_performance 1;
+    owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#pa>;
     a melod:InstrumentationDetail.
-_:f1982660-cde5-4694-aa65-6d2882e7e12d mus:U2_foresees_use_of_medium_of_performance melodTerms:Trumpet;
-    owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#bb>;
+_:b17_f1982660-cde5-4694-aa65-6d2882e7e12d schema:position 2;
+    mus:U2_foresees_use_of_medium_of_performance melodTerms:Trumpet;
+    schema:description "Trp.";
     mus:U30_foresees_quantity_of_medium_of_performance 3;
+    owl:sameAs <https://www.loc.gov/standards/valuelist/marcmusperf.html#bb>;
     a melod:InstrumentationDetail.
