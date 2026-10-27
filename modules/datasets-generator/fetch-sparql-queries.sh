@@ -1,5 +1,5 @@
 EDITOR_REPO_REF=${EDITOR_REPO_REF:-main}
-editor_raw_base_url=https://raw.githubusercontent.com/music-metadata-tools/MerMEId-MeLODy-Template/$EDITOR_REPO_REF/modules/datasets-generator
+editor_raw_base_url=https://raw.githubusercontent.com/music-metadata-tools/MerMEId-MeLODy/$EDITOR_REPO_REF/modules/datasets-generator
 CI_PROJECT_DIR="${GITHUB_WORKSPACE:-$(pwd)}"
 output_dir_path=$CI_PROJECT_DIR/sparql-queries
 
