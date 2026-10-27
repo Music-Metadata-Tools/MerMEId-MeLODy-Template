@@ -1,0 +1,6 @@
+<urn:uuid:places/2884711907> <http://www.w3.org/2004/02/skos/core#prefLabel> "Berlin" ;
+	a <https://lod.academy/melod/vocab/ontology#PlaceEntity> .
+<urn:uuid:places/2023822932> <http://www.w3.org/2004/02/skos/core#prefLabel> "Frankfurt a. M." ;
+	a <https://lod.academy/melod/vocab/ontology#PlaceEntity> .
+<urn:uuid:places/2096486337> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hamburg" ;
+	a <https://lod.academy/melod/vocab/ontology#PlaceEntity> .

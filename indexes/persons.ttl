@@ -1,0 +1,10 @@
+<urn:uuid:persons/3073066331> <http://www.w3.org/2004/02/skos/core#prefLabel> "König, Samuel" ;
+	a <https://lod.academy/melod/vocab/ontology#PersonEntity> .
+<urn:uuid:persons/4202043203> <http://www.w3.org/2004/02/skos/core#prefLabel> "Neumeister, Erdmann" ;
+	a <https://lod.academy/melod/vocab/ontology#PersonEntity> .
+<urn:uuid:persons/1510488037> <http://www.w3.org/2004/02/skos/core#prefLabel> "Poelchau, Georg" ;
+	a <https://lod.academy/melod/vocab/ontology#PersonEntity> .
+<urn:uuid:persons/2108317331> <http://www.w3.org/2004/02/skos/core#prefLabel> "Telemann, Georg Michael" ;
+	a <https://lod.academy/melod/vocab/ontology#PersonEntity> .
+<urn:uuid:persons/2736609098> <http://www.w3.org/2004/02/skos/core#prefLabel> "Telemann, Georg Philipp" ;
+	a <https://lod.academy/melod/vocab/ontology#PersonEntity> .
