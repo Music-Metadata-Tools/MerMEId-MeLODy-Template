@@ -9,6 +9,7 @@ construct {
   ?expression_iri a melod:ExpressionEntity ;
   	skos:prefLabel ?label ;
     skos:related ?performance_iri ;
+    skos:related ?first_performance_iri ;
     skos:related ?place_iri ;
     skos:related ?contributor_iri ;
     skos:related ?expression_part_iri ;
@@ -20,7 +21,7 @@ construct {
     skos:related ?incipit_mei ;
     skos:broader ?classification .
 } where {
-  select ?expression_iri ?label ?performance_iri ?event_iri ?place_iri ?contributor_iri ?expression_part_iri ?expression_part_of_iri ?expression_component_iri ?instrumentation_iri ?bibliography_iri ?classification ?incipit_mei where {
+  select ?expression_iri ?label ?performance_iri ?first_performance_iri ?event_iri ?place_iri ?contributor_iri ?expression_part_iri ?expression_part_of_iri ?expression_component_iri ?instrumentation_iri ?bibliography_iri ?classification ?incipit_mei where {
     ?expression_iri a melod:Expression .
     OPTIONAL { 
       ?expression_iri rdfs:label ?existing_label . 
@@ -35,8 +36,8 @@ construct {
       FILTER(isIRI(?performance_iri)) .
     }
     OPTIONAL {
-      ?expression_iri schema:firstPerformance ?performance_iri .
-      FILTER(isIRI(?performance_iri)) .
+      ?expression_iri schema:firstPerformance ?first_performance_iri .
+      FILTER(isIRI(?first_performance_iri)) .
     }
     OPTIONAL {
       ?expression_iri schema:locationCreated ?place_iri .
