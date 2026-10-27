@@ -1,0 +1,4 @@
+<urn:uuid:dataCollections/manifestations> <http://www.w3.org/2004/02/skos/core#prefLabel> "All manifestations" ;
+	a <https://lod.academy/melod/vocab/ontology#DataCollectionEntity> .
+<urn:uuid:dataCollections/works> <http://www.w3.org/2004/02/skos/core#prefLabel> "All works" ;
+	a <https://lod.academy/melod/vocab/ontology#DataCollectionEntity> .

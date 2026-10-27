@@ -1,0 +1,2 @@
+<urn:uuid:dataCatalogs/catalog> <http://www.w3.org/2004/02/skos/core#prefLabel> "MerMEId MeLODy Template" ;
+	a <https://lod.academy/melod/vocab/ontology#DataCatalog> .
