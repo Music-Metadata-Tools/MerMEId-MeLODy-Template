@@ -7,10 +7,10 @@
 <urn:uuid:expressions/1921829629> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:instrumentations/1134679629> ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Chor [Dictum] ('Halleluja, lobet den Namen des Herrn')" ;
 	a <https://lod.academy/melod/vocab/ontology#ExpressionEntity> .
-<urn:uuid:expressions/926630544> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:instrumentations/1134679629> ;
+<urn:uuid:expressions/926630544> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:instrumentations/1134679629> , <urn:uuid:expressions/4054568812> ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Choral ('All solch dein Güt wir preisen')" ;
 	a <https://lod.academy/melod/vocab/ontology#ExpressionEntity> .
-<urn:uuid:expressions/1100659433> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:instrumentations/1134679629> ;
+<urn:uuid:expressions/1100659433> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:instrumentations/1134679629> , <urn:uuid:expressions/2092075796> ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Choral ('Durch Trauren und durch Plagen')" ;
 	a <https://lod.academy/melod/vocab/ontology#ExpressionEntity> .
 <urn:uuid:expressions/2092075796> <http://www.w3.org/2004/02/skos/core#broader> "Choral" ;

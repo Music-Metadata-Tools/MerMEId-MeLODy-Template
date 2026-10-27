@@ -1,12 +1,9 @@
-<urn:uuid:performanceEvents/603545879> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:venues/2096486337> ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Aufführung" ;
-	a <https://lod.academy/melod/vocab/ontology#PerformanceEventEntity> .
-<urn:uuid:performanceEvents/4019778394> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:venues/2096486337> ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Aufführung" ;
-	a <https://lod.academy/melod/vocab/ontology#PerformanceEventEntity> .
-<urn:uuid:performanceEvents/3395291370> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:venues/2096486337> ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Aufführung" ;
+<urn:uuid:performanceEvents/3395291370> <http://www.w3.org/2004/02/skos/core#prefLabel> "Aufführung 1. Januar 1751 (Neujahr)" ;
 	a <https://lod.academy/melod/vocab/ontology#PerformanceEventEntity> .
 <urn:uuid:performanceEvents/1412123009> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:venues/3689561562> ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Aufführung" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Aufführung [1. Januar 1742 (Neujahr)]" ;
+	a <https://lod.academy/melod/vocab/ontology#PerformanceEventEntity> .
+<urn:uuid:performanceEvents/4019778394> <http://www.w3.org/2004/02/skos/core#prefLabel> "Aufführung: 1. Januar 1758 (Neujahr)" ;
+	a <https://lod.academy/melod/vocab/ontology#PerformanceEventEntity> .
+<urn:uuid:performanceEvents/603545879> <http://www.w3.org/2004/02/skos/core#prefLabel> "Aufführung: 1. Januar 1763 (Neujahr)" ;
 	a <https://lod.academy/melod/vocab/ontology#PerformanceEventEntity> .
