@@ -5,22 +5,6 @@ It contains some example Turtle files and a datasets generator to create the ind
 
 To configure this repository, you need to activate the GitHub Pages and modify the configuration.
 
-
-## 1. Set up GitHub Pages
-
-After creating the data repository, activate GitHub Pages by going to Settings → Pages and setting the source to GitHub Actions.
-
-## 2. Modify configuration file
-
-To use the indexes in the editor, the correct url to the datasets needs to be modified in the [configuration.json file](configuration/configuration.json).
-To do this, you need to replace the line 
-```"datasetBaseUrl": "https://music-metadata-tools.github.io/MerMEId-MeLODy-Template/datasets/",``` 
-to 
-```"datasetBaseUrl": "{your_pages_url}/datasets/",```.
-
-You can find your GitHub Pages url on the main site of your repository once the workflows for the GitHub Pages are activated
-
-
 ## Data Validation
 
 You can validate your data against the MerMEId MeLODy SHACL shapes using either:
