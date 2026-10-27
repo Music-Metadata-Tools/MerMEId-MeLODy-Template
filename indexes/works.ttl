@@ -1,4 +1,4 @@
-<urn:uuid:works/555068543> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:bibliography/268258228> , <urn:uuid:expressions/2293419636> ;
+<urn:uuid:works/555068543> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:dataCollections/works> , <urn:uuid:bibliography/268258228> , <urn:uuid:expressions/2293419636> ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Halleluja, lobet den Namen des Herrn" ;
 	a <https://lod.academy/melod/vocab/ontology#WorkEntity> ;
 	<http://www.w3.org/2004/02/skos/core#related> <urn:uuid:bibliography/2624363417> .
