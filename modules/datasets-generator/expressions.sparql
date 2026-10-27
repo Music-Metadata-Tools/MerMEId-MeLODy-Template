@@ -26,6 +26,9 @@ construct {
     OPTIONAL { 
       ?expression_iri rdfs:label ?existing_label . 
     }
+    OPTIONAL { 
+      ?expression_iri schema:position ?position .
+    }
     bind(coalesce(?existing_label, STR(?expression_iri)) AS ?expression_label)
     OPTIONAL {
       ?expression_iri melod:hasIncipit ?incipit_iri .
@@ -72,7 +75,8 @@ construct {
       ?expression_iri melod:hasIncipit ?incipit_node .
       ?incipit_node melod:hasMEIScore ?incipit_mei .
     }
-    bind(coalesce(concat(?expression_label, " ('", ?incipit_text, "')"), ?expression_label) AS ?label)
+    bind(coalesce(concat(?expression_label, " ('", ?incipit_text, "')"), ?expression_label) AS ?label_incipit)
+    bind(coalesce(concat(?position, ". '", ?label_incipit), ?label_incipit) AS ?label)
   }
   order by ?label
 }
