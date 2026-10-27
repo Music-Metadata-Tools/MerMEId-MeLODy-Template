@@ -2,7 +2,7 @@
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Halleluja, lobet den Namen des Herrn" ;
 	a <https://lod.academy/melod/vocab/ontology#WorkEntity> ;
 	<http://www.w3.org/2004/02/skos/core#related> <urn:uuid:bibliography/2624363417> .
-<urn:uuid:works/1031334055> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:bibliography/382681371> , <urn:uuid:works/555068543> , <urn:uuid:expressions/2372423187> ;
+<urn:uuid:works/1031334055> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:dataCollections/works> , <urn:uuid:bibliography/382681371> , <urn:uuid:works/555068543> , <urn:uuid:expressions/2372423187> ;
 	<http://www.w3.org/2004/02/skos/core#altLabel> "Musikalisches Lob Gottes" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Musicalisches Lob Gottes" ;
 	a <https://lod.academy/melod/vocab/ontology#WorkEntity> .
