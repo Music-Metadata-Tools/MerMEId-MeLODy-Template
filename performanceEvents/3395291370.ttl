@@ -3,20 +3,23 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix schema: <https://schema.org/>.
 @prefix sh: <http://www.w3.org/ns/shacl#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-@prefix mus: <http://data.doremus.org/ontology#>.
-@prefix terms: <https://lod.academy/melod/vocab/terms#>.
-@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
+@prefix mus: <http://data.doremus.org/ontology#>.
+@prefix terms: <https://mermeid-data-model-efbf77.pages.gitlab.rlp.net/>.
+@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
+@prefix dash: <http://datashapes.org/dash#>.
+@prefix melodTerms: <https://lod.academy/melod/vocab/terms#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 
-<urn:uuid:performanceEvents/3395291370> rdfs:label "Aufführung";
-    melod:hasVenue <urn:uuid:venues/2096486337>;
-    schema:description "Nach Datum auf dem Umschlag des Stimmenmaterials (D-B Mus.ms. 21740/250).";
+<urn:uuid:performanceEvents/3395291370> rdfs:label "Aufführung 1. Januar 1751 (Neujahr)";
     a melod:PerformanceEvent;
-    melod:hasEventDate _:5e58e2b5-942a-4282-b682-db7e42824c25.
-_:5e58e2b5-942a-4282-b682-db7e42824c25 melod:isodate "1751-01-01"^^xsd:date;
+    melod:hasEventDate _:b96_5e58e2b5-942a-4282-b682-db7e42824c25;
+    dct:conformsTo melod:PerformanceEvent.
+_:b96_5e58e2b5-942a-4282-b682-db7e42824c25 melod:isodate "1751-01-01"^^xsd:date;
+    melod:hasCertainty melodTerms:HighCertainty;
     schema:description "1. Januar 1751 (Neujahr)";
-    melod:hasCertainty terms:HighCertainty;
     a melod:ExactDate.

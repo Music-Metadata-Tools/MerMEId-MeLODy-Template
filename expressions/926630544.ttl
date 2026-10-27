@@ -20,16 +20,17 @@
     melod:inLanguage melodTerms:German;
     melod:completionStatus melodTerms:CompleteExpression;
     a melod:Expression;
-    mus:U11_has_key _:b34_7a627758-f334-4559-bb41-4a2986ec19c7;
-    melod:hasMeter _:b34_728a2446-f148-432d-8612-8f230257bd2e;
+    mus:U11_has_key _:b153_b34_7a627758-f334-4559-bb41-4a2986ec19c7;
+    melod:hasMeter _:b153_b34_728a2446-f148-432d-8612-8f230257bd2e;
     melod:hasInstrumentation <urn:uuid:instrumentations/1134679629>;
-    melod:hasIncipit _:b34_257b0c4b-5189-4cc5-980c-f1656d77cdc4;
+    melod:hasIncipit _:b153_b34_257b0c4b-5189-4cc5-980c-f1656d77cdc4;
+    melod:hasExpressionPart <urn:uuid:expressions/4054568812>;
     dct:conformsTo melod:Expression.
-_:b34_7a627758-f334-4559-bb41-4a2986ec19c7 melod:hasPitch melodTerms:C;
+_:b153_b34_7a627758-f334-4559-bb41-4a2986ec19c7 melod:hasPitch melodTerms:C;
     melod:isInMode melodTerms:Minor;
     a melod:Key.
-_:b34_728a2446-f148-432d-8612-8f230257bd2e a melod:Meter;
+_:b153_b34_728a2446-f148-432d-8612-8f230257bd2e a melod:Meter;
     melod:usesMeterSymbol "common".
-_:b34_257b0c4b-5189-4cc5-980c-f1656d77cdc4 a melod:MusicIncipit;
+_:b153_b34_257b0c4b-5189-4cc5-980c-f1656d77cdc4 a melod:MusicIncipit;
     melod:hasIncipitValue "@clef:G-2@keysig:bBEA@timesig:c@data:2-'G/''CD/EF/2.D4C/'1B/";
     melod:hasIncipitText "All solch dein Güt wir preisen"@de.
