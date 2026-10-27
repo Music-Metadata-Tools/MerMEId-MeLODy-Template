@@ -6,28 +6,34 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix mus: <http://data.doremus.org/ontology#>.
-@prefix terms: <https://lod.academy/melod/vocab/terms#>.
-@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
 @prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
+@prefix mus: <http://data.doremus.org/ontology#>.
+@prefix terms: <https://mermeid-data-model-efbf77.pages.gitlab.rlp.net/>.
+@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
+@prefix dash: <http://datashapes.org/dash#>.
+@prefix melodTerms: <https://lod.academy/melod/vocab/terms#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 
 <urn:uuid:expressions/2372423187> rdfs:label "Musicalisches Lob Gottes";
-    melod:inLanguage terms:German;
+    melod:inLanguage melodTerms:German;
     melod:hasClassification "Geistliche Vokalmusik (liturgisch)", "Kirchenmusikalischer Jahrgang [Kantaten-Jahrgang]";
     a melod:Expression;
-    melod:hasContribution _:a2bf5fd8-a15b-425e-9b10-465c6f9b8331, _:87486e71-1872-4547-8651-507769b48903;
-    schema:dateCreated _:ef70fd41-35eb-4f18-986a-1e0c4e992c7c;
+    melod:hasContribution _:b58_a2bf5fd8-a15b-425e-9b10-465c6f9b8331, _:b58_87486e71-1872-4547-8651-507769b48903;
+    schema:dateCreated _:b58_ef70fd41-35eb-4f18-986a-1e0c4e992c7c;
     schema:locationCreated <urn:uuid:places/2096486337>;
     melod:hasInstrumentation <urn:uuid:instrumentations/1134679629>;
-    melod:hasExpressionPart <urn:uuid:expressions/2293419636>.
-_:a2bf5fd8-a15b-425e-9b10-465c6f9b8331 melod:hasAgent <urn:uuid:persons/2736609098>;
-    melod:hasRole terms:Composer;
-    melod:hasCertainty terms:HighCertainty;
+    melod:hasExpressionPart <urn:uuid:expressions/2293419636>;
+    dct:conformsTo melod:Expression.
+_:b58_a2bf5fd8-a15b-425e-9b10-465c6f9b8331 melod:hasAgent <urn:uuid:persons/2736609098>;
+    melod:hasRole melodTerms:Composer;
+    melod:hasCertainty melodTerms:HighCertainty;
     a melod:Contribution.
-_:87486e71-1872-4547-8651-507769b48903 melod:hasAgent <urn:uuid:persons/4202043203>;
-    melod:hasRole terms:Lyricist;
-    melod:hasCertainty terms:HighCertainty;
+_:b58_87486e71-1872-4547-8651-507769b48903 melod:hasAgent <urn:uuid:persons/4202043203>;
+    melod:hasRole melodTerms:Lyricist;
+    melod:hasCertainty melodTerms:HighCertainty;
     a melod:Contribution.
-_:ef70fd41-35eb-4f18-986a-1e0c4e992c7c melod:hasCertainty melod:MediumCertainty;
-    a melod:Date;
-    schema:description "[1741]-1744".
+_:b58_ef70fd41-35eb-4f18-986a-1e0c4e992c7c a melod:Date;
+    schema:description "[1741]-1744";
+    melod:notBefore "1741";
+    melod:notAfter "1744".

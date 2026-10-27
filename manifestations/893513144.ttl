@@ -3,31 +3,36 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix schema: <https://schema.org/>.
 @prefix sh: <http://www.w3.org/ns/shacl#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
-@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-@prefix terms: <https://lod.academy/melod/vocab/terms#>.
-@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
+@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 @prefix mus: <http://data.doremus.org/ontology#>.
+@prefix terms: <https://mermeid-data-model-efbf77.pages.gitlab.rlp.net/>.
+@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
+@prefix dash: <http://datashapes.org/dash#>.
+@prefix melodTerms: <https://lod.academy/melod/vocab/terms#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 
-_:239c2e71-de0c-4fc2-98fb-944b5543b9cd rdfs:label "Da, bei aufgehender Friedenssonne (Berlin 1762)";
+_:b84_239c2e71-de0c-4fc2-98fb-944b5543b9cd rdfs:label "Da, bei aufgehender Friedenssonne (Berlin 1762)";
     a melod:Title.
 <urn:uuid:manifestations/893513144> a melod:Manifestation;
-    melod:hasTitle _:239c2e71-de0c-4fc2-98fb-944b5543b9cd;
-    melod:hasClassificationOfManifestation "Textquelle";
-    melod:hasTitlePage _:811b0f7e-3b3a-40b2-8886-d2875fa75cb5;
-    schema:publication _:4ac5fdb1-44e1-473c-8f03-14252de3c7a3;
-    melod:hasContribution _:d118c288-3262-4623-894c-02548e49645d;
-    lrmoo:R4_embodies <urn:uuid:expressions/2293419636>.
-_:811b0f7e-3b3a-40b2-8886-d2875fa75cb5 a melod:TitlePage;
-    melod:paragraph "<rend fontstyle=\"italic\">Da, | bey aufgehender Friedens=Sonne, | als nemlich | zwischen | Sr. Kön. Maj. in Preußen, | unserm allergnädigsten Herrn | und | Sr. Rußisch Kaiserl. Maj. | ein erwünschter Friede | getroffen worden, | ein | dem höchsten GOtt darzubringendes Dankfest | am 1 heil. Pfingst=Tage, | den 30 Mai 1762. | angeordet worden, | so wurde, | zu mehrerer Aufmunterung, unter nachfolgendem Text, | in der hiesigen S.Nicolai Kirche eine Musik | aufgeführet | von | J. Ditmar, | Cant. und Direct. Mus. zu S. Nicolai.</rend> | Berlin, gedruckt bey Samuel König, privil. Buchdrucker.".
-_:4ac5fdb1-44e1-473c-8f03-14252de3c7a3 a schema:PublicationEvent;
+    melod:hasTitle _:b84_239c2e71-de0c-4fc2-98fb-944b5543b9cd;
+    melod:hasContribution _:b84_d118c288-3262-4623-894c-02548e49645d;
+    melod:hasTitlePage _:b84_811b0f7e-3b3a-40b2-8886-d2875fa75cb5;
+    schema:publication _:b84_4ac5fdb1-44e1-473c-8f03-14252de3c7a3;
+    lrmoo:R4_embodies <urn:uuid:expressions/2293419636>;
+    melod:memberOfDataCollection <urn:uuid:dataCollections/manifestations>;
+    dct:conformsTo melod:Manifestation.
+_:b84_d118c288-3262-4623-894c-02548e49645d a melod:Contribution;
+    melod:hasAgent <urn:uuid:persons/4202043203>;
+    melod:hasRole melodTerms:Binder;
+    melod:hasCertainty melodTerms:LowCertainty.
+_:b84_811b0f7e-3b3a-40b2-8886-d2875fa75cb5 a melod:TitlePage;
+    melod:paragraph "<rend fontstyle=\"italic\">Da, | bey aufgehender Friedens=Sonne, | als nemlich | zwischen | Sr. Kön. Maj. in Preußen, | unserm allergnädigsten Herrn | und | Sr. Rußisch Kaiserl. Maj. | ein erwünschter Friede | getroffen worden, | ein | dem höchsten GOtt darzubringendes Dankfest | am 1 heil. Pfingst=Tage, | den 30 Mai 1762. | angeordet worden, | so wurde, | zu mehrerer Aufmunterung, unter nachfolgendem Text, | in der hiesigen S.Nicolai Kirche eine Musik | aufgeführet | von | J. Ditmar, | Cant. und Direct. Mus. zu S. Nicolai.</rend> | Berlin, gedruckt bey Samuel König, privil. Buchdrucker."^^rdf:HTML.
+_:b84_4ac5fdb1-44e1-473c-8f03-14252de3c7a3 a schema:PublicationEvent;
     schema:startDate "1762-01-01"^^xsd:date;
     schema:endDate "1762-12-31"^^xsd:date;
     schema:publishedBy <urn:uuid:persons/3073066331>;
     schema:location <urn:uuid:places/2884711907>.
-_:d118c288-3262-4623-894c-02548e49645d a melod:Contribution;
-    melod:hasAgent <urn:uuid:persons/4202043203>;
-    melod:hasRole terms:Binder;
-    melod:hasCertainty terms:LowCertainty.

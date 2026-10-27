@@ -3,18 +3,22 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix schema: <https://schema.org/>.
 @prefix sh: <http://www.w3.org/ns/shacl#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
-@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-@prefix terms: <https://lod.academy/melod/vocab/terms#>.
-@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
+@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 @prefix mus: <http://data.doremus.org/ontology#>.
+@prefix terms: <https://mermeid-data-model-efbf77.pages.gitlab.rlp.net/>.
+@prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
+@prefix dash: <http://datashapes.org/dash#>.
+@prefix melodTerms: <https://lod.academy/melod/vocab/terms#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 
-_:b935e5ef-2664-4cdd-9aaf-07b1e698887b rdfs:label "Musicalisches Lob Gottes (Nürnberg 1742-1744)";
+_:b88_b935e5ef-2664-4cdd-9aaf-07b1e698887b rdfs:label "Musicalisches Lob Gottes (Nürnberg 1742-1744)";
     a melod:Title.
 <urn:uuid:manifestations/1920521013> a melod:Manifestation;
-    melod:hasTitle _:b935e5ef-2664-4cdd-9aaf-07b1e698887b;
-    schema:description "Zu Fundorten des vollständigen Druckwerks siehe den Haupteintrag <rend fontstyle=\"italic\">Musicalisches Lob Gottes</rend> (Zugehörigkeit:MusLG).";
-    melod:hasClassificationOfManifestation "Musikalische Quelle", "Hauptquelle";
-    lrmoo:R4_embodies <urn:uuid:expressions/2293419636>.
+    melod:hasTitle _:b88_b935e5ef-2664-4cdd-9aaf-07b1e698887b;
+    lrmoo:R4_embodies <urn:uuid:expressions/2293419636>;
+    melod:memberOfDataCollection <urn:uuid:dataCollections/manifestations>;
+    dct:conformsTo melod:Manifestation.
