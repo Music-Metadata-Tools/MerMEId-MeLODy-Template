@@ -14,48 +14,58 @@ manifestations_dir_path=$CI_PROJECT_DIR/manifestations
 items_dir_path=$CI_PROJECT_DIR/items
 bibliography_dir_path=$CI_PROJECT_DIR/bibliography
 letters_dir_path=$CI_PROJECT_DIR/letters
-modules_dir_path=$CI_PROJECT_DIR/modules
-datasets_generator_dir_path=$modules_dir_path/datasets-generator
+dataCatalogs_dir_path=$CI_PROJECT_DIR/dataCatalogs
+dataCollections_dir_path=$CI_PROJECT_DIR/dataCollections
+datasets_generator_dir_path=$CI_PROJECT_DIR/sparql-queries
+indexes_dir_path=$CI_PROJECT_DIR/indexes
 public_dir_path=$CI_PROJECT_DIR/public
 datasets_dir_path=$public_dir_path/datasets
 
-mkdir -p $datasets_dir_path
+mkdir -p $indexes_dir_path
+
+# $datasets_generator_dir_path is populated by the fetch_sparql_queries job in pages.yml
 
 echo "construct the persons dataset"
-time /static-publishing-backend rdf-data-aggregator $persons_dir_path/ "*.ttl" $datasets_generator_dir_path/persons.sparql $datasets_dir_path/persons.ttl
+time /static-publishing-backend rdf-data-aggregator $persons_dir_path/ "*.ttl" $datasets_generator_dir_path/persons.sparql $indexes_dir_path/persons.ttl
 
 echo "construct the institutions dataset"
-time /static-publishing-backend rdf-data-aggregator $institutions_dir_path/ "*.ttl" $datasets_generator_dir_path/institutions.sparql $datasets_dir_path/institutions.ttl
+time /static-publishing-backend rdf-data-aggregator $institutions_dir_path/ "*.ttl" $datasets_generator_dir_path/institutions.sparql $indexes_dir_path/institutions.ttl
 
 echo "construct the places dataset"
-time /static-publishing-backend rdf-data-aggregator $places_dir_path/ "*.ttl" $datasets_generator_dir_path/places.sparql $datasets_dir_path/places.ttl
+time /static-publishing-backend rdf-data-aggregator $places_dir_path/ "*.ttl" $datasets_generator_dir_path/places.sparql $indexes_dir_path/places.ttl
 
 echo "construct the venues dataset"
-time /static-publishing-backend rdf-data-aggregator $CI_PROJECT_DIR/ "[vp]*/*.ttl" $datasets_generator_dir_path/venues.sparql $datasets_dir_path/venues.ttl
+time /static-publishing-backend rdf-data-aggregator $CI_PROJECT_DIR/ "[vp]*/*.ttl" $datasets_generator_dir_path/venues.sparql $indexes_dir_path/venues.ttl
 
 echo "construct the events dataset"
-time /static-publishing-backend rdf-data-aggregator $events_dir_path/ "*.ttl" $datasets_generator_dir_path/events.sparql $datasets_dir_path/events.ttl
+time /static-publishing-backend rdf-data-aggregator $events_dir_path/ "*.ttl" $datasets_generator_dir_path/events.sparql $indexes_dir_path/events.ttl
 
 echo "construct the performance-events dataset"
-time /static-publishing-backend rdf-data-aggregator $CI_PROJECT_DIR/ "p*/*.ttl" $datasets_generator_dir_path/performanceEvents.sparql $datasets_dir_path/performanceEvents.ttl
+time /static-publishing-backend rdf-data-aggregator $CI_PROJECT_DIR/ "p*/*.ttl" $datasets_generator_dir_path/performanceEvents.sparql $indexes_dir_path/performanceEvents.ttl
 
 echo "construct the instrumentations dataset"
-time /static-publishing-backend rdf-data-aggregator $instrumentations_dir_path/ "*.ttl" $datasets_generator_dir_path/instrumentations.sparql $datasets_dir_path/instrumentations.ttl
+time /static-publishing-backend rdf-data-aggregator $instrumentations_dir_path/ "*.ttl" $datasets_generator_dir_path/instrumentations.sparql $indexes_dir_path/instrumentations.ttl
 
 echo "construct the works dataset"
-time /static-publishing-backend rdf-data-aggregator $CI_PROJECT_DIR/ "[wp]*/*.ttl" $datasets_generator_dir_path/works.sparql $datasets_dir_path/works.ttl
+time /static-publishing-backend rdf-data-aggregator $CI_PROJECT_DIR/ "[wp]*/*.ttl" $datasets_generator_dir_path/works.sparql $indexes_dir_path/works.ttl
 
 echo "construct the expressions dataset"
-time /static-publishing-backend rdf-data-aggregator $expressions_dir_path/ "*.ttl" $datasets_generator_dir_path/expressions.sparql $datasets_dir_path/expressions.ttl
+time /static-publishing-backend rdf-data-aggregator $expressions_dir_path/ "*.ttl" $datasets_generator_dir_path/expressions.sparql $indexes_dir_path/expressions.ttl
 
 echo "construct the manifestations dataset"
-time /static-publishing-backend rdf-data-aggregator $manifestations_dir_path/ "*.ttl" $datasets_generator_dir_path/manifestations.sparql $datasets_dir_path/manifestations.ttl
+time /static-publishing-backend rdf-data-aggregator $manifestations_dir_path/ "*.ttl" $datasets_generator_dir_path/manifestations.sparql $indexes_dir_path/manifestations.ttl
 
 echo "construct the items dataset"
-time /static-publishing-backend rdf-data-aggregator $items_dir_path/ "*.ttl" $datasets_generator_dir_path/items.sparql $datasets_dir_path/items.ttl
+time /static-publishing-backend rdf-data-aggregator $items_dir_path/ "*.ttl" $datasets_generator_dir_path/items.sparql $indexes_dir_path/items.ttl
 
 echo "construct the bibliography dataset"
-time /static-publishing-backend rdf-data-aggregator $bibliography_dir_path/ "*.ttl" $datasets_generator_dir_path/bibliography.sparql $datasets_dir_path/bibliography.ttl
+time /static-publishing-backend rdf-data-aggregator $bibliography_dir_path/ "*.ttl" $datasets_generator_dir_path/bibliography.sparql $indexes_dir_path/bibliography.ttl
 
 echo "construct the letters dataset"
-time /static-publishing-backend rdf-data-aggregator $letters_dir_path/ "*.ttl" $datasets_generator_dir_path/letters.sparql $datasets_dir_path/letters.ttl
+time /static-publishing-backend rdf-data-aggregator $letters_dir_path/ "*.ttl" $datasets_generator_dir_path/letters.sparql $indexes_dir_path/letters.ttl
+
+echo "construct the data-catalogs dataset"
+time /static-publishing-backend rdf-data-aggregator $dataCatalogs_dir_path/ "*.ttl" $datasets_generator_dir_path/dataCatalogs.sparql $indexes_dir_path/dataCatalogs.ttl
+
+echo "construct the data-collections dataset"
+time /static-publishing-backend rdf-data-aggregator $dataCollections_dir_path/ "*.ttl" $datasets_generator_dir_path/dataCollections.sparql $indexes_dir_path/dataCollections.ttl
