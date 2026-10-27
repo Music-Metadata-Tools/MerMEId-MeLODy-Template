@@ -1,17 +1,20 @@
-<urn:uuid:expressions/2277979240> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:instrumentations/3896901877> ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Aria ('Jauchzet alle, Groß und Klein')" ;
-	a <https://lod.academy/melod/vocab/ontology#ExpressionEntity> .
-<urn:uuid:expressions/2824638156> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:instrumentations/204336523> ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Aria ('Legt Lob und Dank zu Jesu Füßen')" ;
-	a <https://lod.academy/melod/vocab/ontology#ExpressionEntity> .
 <urn:uuid:expressions/1921829629> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:instrumentations/1134679629> ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Chor [Dictum] ('Halleluja, lobet den Namen des Herrn')" ;
-	a <https://lod.academy/melod/vocab/ontology#ExpressionEntity> .
-<urn:uuid:expressions/926630544> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:instrumentations/1134679629> , <urn:uuid:expressions/4054568812> ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Choral ('All solch dein Güt wir preisen')" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "1. 'Chor [Dictum] ('Halleluja, lobet den Namen des Herrn')" ;
 	a <https://lod.academy/melod/vocab/ontology#ExpressionEntity> .
 <urn:uuid:expressions/1100659433> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:instrumentations/1134679629> , <urn:uuid:expressions/2092075796> ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Choral ('Durch Trauren und durch Plagen')" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "2. 'Choral ('Durch Trauren und durch Plagen')" ;
+	a <https://lod.academy/melod/vocab/ontology#ExpressionEntity> .
+<urn:uuid:expressions/1298183696> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:instrumentations/204336523> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "3. 'Recit[ativ] ('So ist das alte Jahr begraben')" ;
+	a <https://lod.academy/melod/vocab/ontology#ExpressionEntity> .
+<urn:uuid:expressions/2824638156> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:instrumentations/204336523> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "4. 'Aria ('Legt Lob und Dank zu Jesu Füßen')" ;
+	a <https://lod.academy/melod/vocab/ontology#ExpressionEntity> .
+<urn:uuid:expressions/926630544> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:instrumentations/1134679629> , <urn:uuid:expressions/4054568812> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "5. 'Choral ('All solch dein Güt wir preisen')" ;
+	a <https://lod.academy/melod/vocab/ontology#ExpressionEntity> .
+<urn:uuid:expressions/2277979240> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:instrumentations/3896901877> ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "6. 'Aria ('Jauchzet alle, Groß und Klein')" ;
 	a <https://lod.academy/melod/vocab/ontology#ExpressionEntity> .
 <urn:uuid:expressions/2092075796> <http://www.w3.org/2004/02/skos/core#broader> "Choral" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Durch Trauern und durch Plagen (Choral)" ;
@@ -20,17 +23,13 @@
 	<http://www.w3.org/2004/02/skos/core#related> <urn:uuid:expressions/2277979240> , <urn:uuid:expressions/2372423187> , <urn:uuid:persons/2736609098> , <urn:uuid:performanceEvents/1412123009> , <urn:uuid:performanceEvents/4019778394> ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Halleluja, lobet den Namen des Herrn" ;
 	a <https://lod.academy/melod/vocab/ontology#ExpressionEntity> ;
-	<http://www.w3.org/2004/02/skos/core#related> <urn:uuid:persons/4202043203> , <urn:uuid:performanceEvents/603545879> ;
 	<http://www.w3.org/2004/02/skos/core#broader> "Kirchenmusik [geisliche Kantate]" ;
-	<http://www.w3.org/2004/02/skos/core#related> <urn:uuid:expressions/926630544> , <urn:uuid:expressions/2824638156> , <urn:uuid:expressions/1298183696> , <urn:uuid:expressions/1100659433> , <urn:uuid:expressions/1921829629> , <urn:uuid:performanceEvents/3395291370> .
+	<http://www.w3.org/2004/02/skos/core#related> <urn:uuid:expressions/926630544> , <urn:uuid:persons/4202043203> , <urn:uuid:performanceEvents/603545879> , <urn:uuid:expressions/2824638156> , <urn:uuid:expressions/1298183696> , <urn:uuid:expressions/1100659433> , <urn:uuid:expressions/1921829629> , <urn:uuid:performanceEvents/3395291370> .
 <urn:uuid:expressions/4054568812> <http://www.w3.org/2004/02/skos/core#prefLabel> "Helft mir Gottes Güte preisen (Choral)" ;
 	a <https://lod.academy/melod/vocab/ontology#ExpressionEntity> .
-<urn:uuid:expressions/2372423187> <http://www.w3.org/2004/02/skos/core#broader> "Kirchenmusikalischer Jahrgang [Kantaten-Jahrgang]" ;
+<urn:uuid:expressions/2372423187> <http://www.w3.org/2004/02/skos/core#broader> "Geistliche Vokalmusik (liturgisch)" ;
 	<http://www.w3.org/2004/02/skos/core#related> <urn:uuid:instrumentations/1134679629> , <urn:uuid:expressions/2293419636> , <urn:uuid:persons/4202043203> , <urn:uuid:places/2096486337> ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Musicalisches Lob Gottes" ;
 	a <https://lod.academy/melod/vocab/ontology#ExpressionEntity> ;
-	<http://www.w3.org/2004/02/skos/core#broader> "Geistliche Vokalmusik (liturgisch)" ;
+	<http://www.w3.org/2004/02/skos/core#broader> "Kirchenmusikalischer Jahrgang [Kantaten-Jahrgang]" ;
 	<http://www.w3.org/2004/02/skos/core#related> <urn:uuid:persons/2736609098> .
-<urn:uuid:expressions/1298183696> <http://www.w3.org/2004/02/skos/core#related> <urn:uuid:instrumentations/204336523> ;
-	<http://www.w3.org/2004/02/skos/core#prefLabel> "Recit[ativ] ('So ist das alte Jahr begraben')" ;
-	a <https://lod.academy/melod/vocab/ontology#ExpressionEntity> .
