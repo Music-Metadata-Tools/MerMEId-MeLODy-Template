@@ -8,22 +8,31 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/>.
 @prefix mus: <http://data.doremus.org/ontology#>.
-@prefix terms: <https://lod.academy/melod/vocab/terms#>.
+@prefix terms: <https://mermeid-data-model-efbf77.pages.gitlab.rlp.net/>.
 @prefix dataset: <https://adwmainz.pages.gitlab.rlp.net/nfdi4culture/cdmd/project_templates/mermeid-template/datasets/>.
+@prefix dash: <http://datashapes.org/dash#>.
+@prefix melodTerms: <https://lod.academy/melod/vocab/terms#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 
-_:b9c2a419-533f-43e2-a11c-951c8119fa59 rdfs:label "Halleluja, lobet den Namen des Herrn"@de;
-    melod:hasTitleType terms:MainTitle;
+_:b8_b9c2a419-533f-43e2-a11c-951c8119fa59 rdfs:label "Halleluja, lobet den Namen des Herrn"@de;
+    melod:hasTitleType melodTerms:MainTitle;
     a melod:Title.
 <urn:uuid:works/555068543> a melod:Work;
-    melod:hasTitle _:b9c2a419-533f-43e2-a11c-951c8119fa59;
-    melod:hasIdentifier _:fbcfea7a-195e-44a2-9b12-b55c6c546743, _:dbcc87ac-f346-4397-ba86-36d76956dc35;
+    melod:hasTitle _:b8_b9c2a419-533f-43e2-a11c-951c8119fa59;
+    melod:hasIdentifier _:b8_fbcfea7a-195e-44a2-9b12-b55c6c546743, _:b8_dbcc87ac-f346-4397-ba86-36d76956dc35;
     schema:creativeWorkStatus "authentic";
+    melod:hasAnnotation _:d72dee77-9821-47bf-b215-39db1d551088;
     lrmoo:R3_is_realised_in <urn:uuid:expressions/2293419636>;
+    melod:memberOfDataCollection <urn:uuid:dataCollections/works>;
     schema:citation <urn:uuid:bibliography/2624363417>, <urn:uuid:bibliography/268258228>;
-    schema:description "Liturgische Bestimmung: Neujahr (1.1.)"@de.
-_:fbcfea7a-195e-44a2-9b12-b55c6c546743 rdfs:label "TVWV";
+    dct:conformsTo melod:Work.
+_:b8_fbcfea7a-195e-44a2-9b12-b55c6c546743 rdfs:label "TVWV";
     a melod:Identifier;
     owl:hasValue "1:713".
-_:dbcc87ac-f346-4397-ba86-36d76956dc35 rdfs:label "Zugehörigkeit";
+_:b8_dbcc87ac-f346-4397-ba86-36d76956dc35 rdfs:label "Zugehörigkeit";
     a melod:Identifier;
     owl:hasValue "MusLG-09".
+_:d72dee77-9821-47bf-b215-39db1d551088 rdfs:label "Liturgische Bestimmung";
+    a melod:Annotation;
+    melod:paragraph "Neujahr (1.1.)"^^rdf:HTML.
